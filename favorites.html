@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Название проекта - Избранные товары</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css?ver1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body class="loaded">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	<header class="header">
+		<div class="container-fluid">
+			<di class="row align-items-center">
+				<div class="col-md-4 col-4 order-md-0 order-1">
+					<div class="header-wrap">
+						<ul class="header-nav hidden-md">
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Для женщин</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Для мужчин</a>
+							</li>  
+	            
+						</ul>
+						<ul class="header-controls">
+							<li class="header-controls__item visible-md">
+								<a href="#" class="header-controls__link btn-toggle-menu"><svg class="icon icon-burger"><use xlink:href="#icon-burger"></use></svg></a>
+							</li>
+							<li class="header-controls__item dropdown">
+								<a href="#" class="header-controls__link btn-search"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></a>
+								<div class="dropdown-block dropdown-block--md-left">
+									<div class="form-field">
+										<input type="text" class="form-input">
+									</div>
+									<nav class="nav">
+										<a href="#" class="nav__link">ДЛЯ ЖЕНЩИН</a>
+										<a href="#" class="nav__link">ДЛЯ МУЖЧИН</a>
+										<a href="#" class="nav__link">СКИДКИ</a>
+									</nav>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="header-logo">
+						<a href="#"><img src="img/logo.svg?ver1.0" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-4 col-8 order-md-0 order-1">
+					<ul class="header-controls">
+						<li class="header-controls__item">
+							<a href="#" class="header-controls__link btn-location">рус</a>
+						</li>
+						<li class="header-controls__item dropdown-hover">
+							<a href="#" class="header-controls__link btn-contact"><svg class="icon icon-comment"><use xlink:href="#icon-comment"></use></svg></a>
+							<div class="dropdown-block dropdown-block--contact">
+								<p><strong>Есть вопросы?</strong></p>
+								<p>Звоните: <a href="tel:380731005105" class="ct-link">+38(073)100-51-05</a></p>
+								<div class="social">
+									<span class="social__title">Пишите:</span>
+									<a href="#" class="social__link"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+									<a href="#" class="social__link"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg></a>
+									<a href="#" class="social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+								</div>
+							</div>
+						</li>  
+						<li class="header-controls__item">
+							<a href="#" class="header-controls__link btn-favorites">
+								<span class="header-controls__badge">1</span>
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</a>
+						</li>  
+						<li class="header-controls__item">
+							<a href="#" class="header-controls__link btn-profile"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg></a>
+						</li>    
+						<li class="header-controls__item">
+							<a href="#" class="header-controls__link btn-cart">
+								<span class="header-controls__badge">3</span>
+								<svg class="icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg>
+							</a>
+						</li>                
+					</ul>
+				</div>
+			</di>
+			
+	
+		</div>
+	</header>
+	
+	<nav class="navbar">
+		<div class="navbar__overlay"></div>
+		
+		<div class="navbar__container">
+			<a href="#" class="navbar__close"><svg class="icon icon-burger"><use xlink:href="#icon-burger"></use></svg></a>
+			<ul class="navbar-menu">
+				<li class="navbar-menu__item">
+					<a href="#" class="navbar-menu__link">Для женщин</a>
+				</li>
+				<li class="navbar-menu__item">
+					<a href="#" class="navbar-menu__link">Для мужчин</a>
+				</li>
+	
+			</ul>
+	
+			<ul class="navbar-menu">
+				<li class="navbar-menu__item">
+					<a href="#" class="navbar-menu__link">МОЙ ПРОФИЛЬ</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- HEADER EOF   -->
+
+	<!-- BEGIN CONTENT -->
+	<main class="main" id="main">
+		<div class="container-fluid">
+			<div class="wrap">
+				<aside class="sidebar">
+					<div class="back-page">
+						<a href="#" class="back-page__btn"><svg class="icon icon-back"><use xlink:href="#icon-back"></use></svg></a>
+					</div>
+
+					<div class="sidebar__item">
+						<div class="h4">Ваш кабинет</div>
+						<ul class="sidebar-menu">
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link ">Личные данные</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link">История заказов</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link ">Рассылки</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link active">Избранное</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link ">Выйти</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="sidebar__item">
+						<div class="h4">Сортировать</div>
+						<ul class="sidebar-menu">
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link active">Популярные</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link">Дорогие</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link">Дешевые</a>
+							</li>
+							<li class="sidebar-menu__item">
+								<a href="#" class="sidebar-menu__link">Акционные</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<div class="content">
+					<h1>Избранные товары</h1>
+					<p>На этой странице, вы можете отслеживать изменение цен на выбранные модели. </p>
+					<p><label class="check-button"><input type="checkbox" ><span class="check-button__slider"></span></label> Отправить уведомление, при изменении цен</p>
+           
+					<div class="row products">
+						<div class="col-6 col-lg-4 col-xl-3">
+							<div class="product-card not-available">
+								<div class="product-card__img">
+									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+								</div>
+								<div class="product-card__body">
+									<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+									<div class="product-card__tags">
+										<div class="product-card__price">10 900 Р</div>
+									</div>
+									<div class="product-card__buttons">
+										<a href="#" class="btn">Убрать</a>
+										<a href="#" class="btn btn--dark">НЕдоступно</a>
+									</div>
+									<p >добавлено в 15.05.2018</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-4 col-xl-3">
+							<div class="product-card">
+								<div class="product-card__img">
+									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+								</div>
+								<div class="product-card__body">
+									<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+									<div class="product-card__tags">
+										<div class="product-card__price-old">19 000 Р</div>
+										<div class="product-card__price text-danger">13 300 Р</div>
+									</div>
+									<div class="product-card__buttons">
+										<a href="#" class="btn">Убрать</a>
+										<a href="#" class="btn btn--dark">В корзину</a>
+									</div>
+									<p >добавлено в 15.05.2018</p>
+									
+								</div>
+							</div>
+    
+						</div>
+						<div class="col-6 col-lg-4 col-xl-3">
+							<div class="product-card">
+								<div class="product-card__img">
+									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+								</div>
+								<div class="product-card__body">
+									<span class="btn-favorites">
+										<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+										<svg class="icon icon-star-filled"><use xlink:href="#icon-star-filled"></use></svg>
+									</span>
+									<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+									<div class="product-card__tags">
+										<div class="product-card__price">10 900 Р</div>
+									</div>
+									<div class="product-card__buttons">
+										<a href="#" class="btn">Убрать</a>
+										<a href="#" class="btn btn--dark">В корзину</a>
+									</div>
+									<p >добавлено в 15.05.2018</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-4 col-xl-3">
+							<div class="product-card">
+								<div class="product-card__img">
+									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+								</div>
+								<div class="product-card__body">
+									<span class="btn-favorites">
+										<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+										<svg class="icon icon-star-filled"><use xlink:href="#icon-star-filled"></use></svg>
+									</span>
+									<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+									<div class="product-card__tags">
+										<div class="product-card__price">10 900 Р</div>
+									</div>
+									<div class="product-card__buttons">
+										<a href="#" class="btn">Убрать</a>
+										<a href="#" class="btn btn--dark">В корзину</a>
+									</div>
+									<p >добавлено в 15.05.2018</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- CONTENT EOF   -->
+	
+	
+
+	<!-- BEGIN FOOTER -->
+	<footer class="footer footer--sticky" id="main-footer">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-md-2">
+					<p class="copyright">&copy; 2018 - 2019</p>
+				</div>
+				<div class="col-md-8">
+					<div class="footer-nav-container">
+						<nav class="footer-nav-horizontal">
+							<a href="#" class="footer-nav-horizontal__link">О нас </a>
+							<a href="#" class="footer-nav-horizontal__link">Доставка и оплата</a>
+							<a href="#" class="footer-nav-horizontal__link">Таблица размеров</a>
+							<a href="#" class="footer-nav-horizontal__link">Контакты</a>
+						</nav>
+						<div class="social social--light">
+							<a href="#" class="social__link"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+							<a href="#" class="social__link"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg></a>
+							<a href="#" class="social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<footer class="footer" id="site-footer">
+		<div class="container-fluid">
+			<div class="footer-top hidden-md">
+				<div class="footer-logo">
+					<a href="#"><img src="img/monoad-logo-light.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="footer-middle hidden-md">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="footer-title">ТОВАРЫ</div>
+						<ul class="footer-nav">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Мужские товары</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Женские товары</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-title">КЛИЕНТСКАЯ СЛУЖБА</div>
+						<ul class="footer-nav">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Личный кабинет</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Отследить заказ</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Таблица размеров</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-title">СЕРВИС</div>
+						<ul class="footer-nav">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Доставка и оплата</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Вопрос и ответ</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-title">ИНФОРМАЦИЯ</div>
+						<ul class="footer-nav">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Договор оферты</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Политика конфедициальности</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row align-items-center">
+					<div class="col-lg-2 order-lg-0 order-1">
+						<p class="copyright">&copy; 2018 - 2019</p>
+					</div>
+					<div class="col-lg-8">
+						<div class="footer-nav-container">
+							<nav class="footer-nav-horizontal visible-md">
+								<a href="#" class="footer-nav-horizontal__link">О нас </a>
+								<a href="#" class="footer-nav-horizontal__link">Доставка и оплата</a>
+								<a href="#" class="footer-nav-horizontal__link">Таблица размеров</a>
+								<a href="#" class="footer-nav-horizontal__link">Контакты</a>
+							</nav>
+							<div class="social social--light">
+								<a href="#" class="social__link"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+								<a href="#" class="social__link"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg></a>
+								<a href="#" class="social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER EOF   -->
+
+</div>
+<!-- BODY EOF   -->
+
+
+<div class="icon-load">
+	<div class="ball a"></div>
+	<div class="ball b"></div>
+	<div class="ball c"></div>
+</div>
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+	<symbol id="icon-burger" viewBox="0 0 35 32">
+	<title>burger</title>
+	<path d="M2.4 1.050h29.2c1.325 0 2.4 1.074 2.4 2.4v0.65c0 1.325-1.075 2.4-2.4 2.4h-29.2c-1.325 0-2.4-1.075-2.4-2.4v-0.65c0-1.325 1.075-2.4 2.4-2.4zM2.4 25.5h29.2c1.325 0 2.4 1.074 2.4 2.4v0.65c0 1.326-1.075 2.4-2.4 2.4h-29.2c-1.325 0-2.4-1.075-2.4-2.4v-0.65c0-1.325 1.075-2.4 2.4-2.4zM2.4 13.3h29.2c1.325 0 2.4 1.075 2.4 2.4v0.6c0 1.326-1.075 2.4-2.4 2.4h-29.2c-1.325 0-2.4-1.074-2.4-2.4v-0.6c0-1.325 1.075-2.4 2.4-2.4z"></path>
+	</symbol>
+	<symbol id="icon-back" viewBox="0 0 37 32">
+	<title>back</title>
+	<path d="M2.476 14.143h31.524c0.842 0 1.524 0.682 1.524 1.524v0.667c0 0.842-0.682 1.524-1.524 1.524h-31.524c-0.842 0-1.524-0.682-1.524-1.524v-0.667c0-0.842 0.682-1.524 1.524-1.524z"></path>
+	<path d="M0.868 15.3c0.482-0.482 2.787-0.482 3.269 0l14.186 14.186c0.482 0.482-1.042 1.264-1.524 1.746s-1.263 0.482-1.745 0l-14.186-14.186c-0.482-0.482-0.482-1.264 0-1.745z"></path>
+	<path d="M0.868 16.709c0.482 0.482 2.787 0.482 3.269 0l14.186-14.186c0.482-0.482-1.042-1.263-1.524-1.746s-1.263-0.482-1.745 0l-14.186 14.186c-0.482 0.482-0.482 1.264 0 1.745z"></path>
+	</symbol>
+	<symbol id="icon-facebook" viewBox="0 0 32 32">
+	<title>facebook</title>
+	<path  d="M31.013 3.989v23.961c0 1.647-1.348 2.995-2.995 2.995h-23.96c-1.647 0-2.995-1.348-2.995-2.995v-23.961c0-1.647 1.348-2.995 2.995-2.995h23.96c1.647 0 2.995 1.348 2.995 2.995zM22.776 3.989c-2.845 0-5.241 2.396-5.241 5.241v3.744h-2.995v4.493h2.995v10.483h4.493v-10.483h4.492v-4.493h-4.492v-2.995c0-0.899 0.599-1.498 1.497-1.498h2.995v-4.492z"></path>
+	</symbol>
+	<symbol id="icon-instagram" viewBox="0 0 32 32">
+	<title>instagram</title>
+	<path  d="M26.997 8.598c0 0.635-0.515 1.151-1.152 1.151h-2.711c-0.637 0-1.151-0.516-1.151-1.151v-2.712c0-0.636 0.514-1.151 1.151-1.151h2.711c0.637 0 1.152 0.515 1.152 1.151zM26.997 26.034c0 0.635-0.515 1.15-1.152 1.15h-20.145c-0.637 0-1.152-0.514-1.152-1.15v-12.569h2.366c-0.11 0.393-0.191 0.798-0.25 1.211-0.062 0.42-0.101 0.846-0.101 1.282 0 5.087 4.123 9.21 9.209 9.21s9.209-4.123 9.209-9.21c0-0.436-0.039-0.863-0.101-1.282-0.059-0.413-0.14-0.818-0.25-1.211h2.366zM15.772 10.204c3.179 0 5.757 2.576 5.757 5.755s-2.578 5.756-5.757 5.756-5.756-2.578-5.756-5.756c0-3.179 2.577-5.755 5.756-5.755zM27.285 0.994h-23.026c-1.906 0-3.453 1.546-3.453 3.453v23.023c0 1.908 1.547 3.455 3.453 3.455h23.026c1.907 0 3.453-1.547 3.453-3.455v-23.023c0-1.907-1.545-3.453-3.453-3.453z"></path>
+	</symbol>
+	<symbol id="icon-search" viewBox="0 0 32 32">
+	<title>search</title>
+	<path d="M31.137 28.498l-2.767 2.767-7.776-7.776v-1.475l-0.553-0.553c-2.029 1.845-4.796 2.952-7.748 2.952-6.641 0-11.99-5.35-11.99-11.991s5.35-11.99 11.99-11.99c6.641 0 11.99 5.35 11.99 11.99 0 2.952-1.107 5.719-2.951 7.748l0.553 0.553h1.476zM20.796 12.419c0-4.724-3.779-8.503-8.503-8.503s-8.503 3.779-8.503 8.503c0 4.724 3.779 8.503 8.503 8.503s8.503-3.779 8.503-8.503z"></path>
+	</symbol>
+	<symbol id="icon-shopping-cart" viewBox="0 0 42 32">
+	<title>shopping-cart</title>
+	<path d="M23.624 26.864c-1.418 0-2.568 1.149-2.568 2.567s1.15 2.568 2.568 2.568c1.418 0 2.568-1.149 2.568-2.568s-1.15-2.567-2.568-2.567zM15.064 26.864c-1.418 0-2.568 1.149-2.568 2.567s1.15 2.568 2.568 2.568 2.568-1.149 2.568-2.568c0-1.418-1.15-2.567-2.568-2.567zM34.417 1.184l-5.875 20.544h-17.853l-5.028-11.984h19.467l0.966-3.424h-25.583l7.901 18.832h22.666l5.947-20.544h3.302l1.272-3.424z"></path>
+	</symbol>
+	<symbol id="icon-telegram" viewBox="0 0 39 32">
+	<title>telegram</title>
+	<path  d="M20.714 25.522c0 0-2.925 2.761-4.816 4.548-0.336 0.317-0.814 0.439-1.263 0.322s-0.791-0.46-0.939-0.896c-1.178-3.47-3.437-10.294-3.437-10.294s-4.835-1.533-8.519-2.635c-0.533-0.159-0.904-0.637-0.922-1.188s0.321-1.051 0.843-1.244c8.214-3.040 28.308-10.579 34.833-12.994 0.423-0.156 0.898-0.073 1.24 0.218s0.497 0.743 0.404 1.18c-1.23 5.78-4.511 21.866-5.864 28.22-0.127 0.597-0.551 1.089-1.127 1.308s-1.221 0.13-1.722-0.226c-3.153-2.245-8.712-6.32-8.712-6.32zM12.293 18.34l2.613 8.618 0.581-5.458c0 0 10.094-9.104 15.848-14.294 0.168-0.152 0.191-0.407 0.052-0.586s-0.394-0.222-0.586-0.1c-6.668 4.259-18.509 11.82-18.509 11.82z"></path>
+	</symbol>
+	<symbol id="icon-user" viewBox="0 0 34 32">
+	<title>user</title>
+	<path d="M16.842 3.643c2.829 0 4.952 2.228 4.952 5.199s-2.122 5.199-4.952 5.199-4.952-2.228-4.952-5.199c0-2.971 2.122-5.199 4.952-5.199s0 0 0 0zM16.842 22.41c10.246 0 14.526 8.368 14.526 9.695h2.316c0-5.968-5.965-12.211-16.842-12.211-10.456 0-16.842 6.242-16.842 12.211h2.316c0-1.326 4.842-9.695 14.526-9.695 6.316 0 0 0 0 0zM8.421 8.842c0 4.863 3.789 8.842 8.421 8.842s8.421-3.979 8.421-8.842c0-4.863-3.79-8.842-8.421-8.842s-8.421 3.979-8.421 8.842z"></path>
+	</symbol>
+	<symbol id="icon-vk" viewBox="0 0 56 32">
+	<title>vk</title>
+	<path  d="M48.98 21.848c-3.727-3.46-3.901-3.541-0.692-7.705 3.984-5.168 9.191-11.791 4.584-11.791-0.902 0-0.259 0-8.8 0-1.707 0-1.83 0.961-2.437 2.393-2.198 5.187-6.378 11.906-7.967 10.879-1.661-1.073-0.9-5.317-0.772-11.627 0.033-1.666 0.024-2.81-2.522-3.402-1.39-0.323-2.742-0.454-3.997-0.454-5.025 0-8.488 2.107-6.52 2.474 3.472 0.647 3.139 8.16 2.329 11.405-1.409 5.648-6.709-4.474-8.918-9.514-0.532-1.213-0.694-2.154-2.596-2.154-1.042 0-5.647 0-7.194 0-1.086 0-1.738 0.354-1.738 1.14 0 1.33 6.543 14.852 12.787 21.592 6.092 6.575 12.113 5.985 16.302 5.985 1.346 0 1.897-0.898 1.88-2.022-0.069-4.237 1.579-6.517 4.551-3.544 3.289 3.289 3.97 5.566 7.962 5.566 1.519 0 5.599 0 7.073 0 1.786 0 2.489-0.575 2.489-1.477 0-1.907-3.141-5.274-5.803-7.744z"></path>
+	</symbol>
+	<symbol id="icon-checked" viewBox="0 0 32 32">
+	<title>checked</title>
+	<path d="M0.369 17.231c-0.246-0.246-0.369-0.615-0.369-0.862s0.123-0.615 0.369-0.862l1.723-1.723c0.492-0.492 1.231-0.492 1.723 0l0.123 0.123 6.769 7.262c0.246 0.246 0.615 0.246 0.862 0l16.492-17.108h0.123c0.492-0.492 1.231-0.492 1.723 0l1.723 1.723c0.492 0.492 0.492 1.231 0 1.723v0l-19.692 20.431c-0.246 0.246-0.492 0.369-0.862 0.369s-0.615-0.123-0.862-0.369l-9.6-10.338-0.246-0.369z"></path>
+	</symbol>
+	<symbol id="icon-icon-arrow-down" viewBox="0 0 32 32">
+	<title>icon-arrow-down</title>
+	<path d="M30.685 7.344l1.315 1.315-15.999 16-16.001-16.003 1.315-1.315 14.687 14.687 14.683-14.684z"></path>
+	</symbol>
+	<symbol id="icon-close" viewBox="0 0 32 32">
+	<title>close</title>
+	<path d="M18.83 16l12.584-12.584c0.362-0.362 0.586-0.862 0.586-1.415s-0.224-1.053-0.586-1.415l-0-0c-0.362-0.362-0.862-0.586-1.415-0.586s-1.053 0.224-1.415 0.586l-12.584 12.584-12.584-12.584c-0.362-0.362-0.862-0.586-1.415-0.586s-1.053 0.224-1.415 0.586l-0 0c-0.362 0.362-0.586 0.862-0.586 1.415s0.224 1.053 0.586 1.415l12.584 12.584-12.584 12.584c-0.362 0.362-0.586 0.862-0.586 1.415 0 1.105 0.896 2.001 2.001 2.001 0.553 0 1.053-0.224 1.415-0.586l12.584-12.584 12.584 12.584c0.391 0.391 0.903 0.586 1.415 0.586s1.024-0.195 1.415-0.586c0.362-0.362 0.586-0.862 0.586-1.415s-0.224-1.053-0.586-1.415l-12.584-12.583z"></path>
+	</symbol>
+	<symbol id="icon-filter" viewBox="0 0 32 32">
+	<title>filter</title>
+	<path d="M20.923 14.769c-2.462 2.954-2.708 3.692-2.462 3.692h-3.692c-0.246 0-2.215-0.246-3.692-2.462l-9.846-12.308c0-2.092 1.6-3.692 3.692-3.692h22.154c2.092 0 3.692 1.6 3.692 3.692l-9.846 11.077zM4.677 3.077l11.2 13.415 11.446-13.415h-22.646z"></path>
+	<path d="M13.538 15.877s1.354 2.462 2.585 2.462c1.108 0 2.338-2.462 2.338-2.462v12.308l-4.923 3.692v-16z"></path>
+	</symbol>
+	<symbol id="icon-info" viewBox="0 0 32 32">
+	<title>info</title>
+	<path  d="M16 0c-8.823 0-16 7.178-16 16s7.178 16 16 16 16-7.177 16-16-7.177-16-16-16zM17.27 25.629h-2.513v-13.822h2.513v13.822zM15.957 9.465c-0.885 0-1.514-0.686-1.514-1.542 0-0.885 0.657-1.57 1.57-1.57 0.943 0 1.543 0.686 1.543 1.57 0.027 0.857-0.601 1.542-1.6 1.542z"></path>
+	</symbol>
+	<symbol id="icon-more" viewBox="0 0 32 32">
+	<title>more</title>
+	<path d="M16.625 21.275l4.831-6.644c0.175-0.244 0.206-0.569 0.069-0.838s-0.413-0.438-0.712-0.438h-9.662c-0.3 0-0.581 0.169-0.713 0.438-0.056 0.113-0.088 0.238-0.088 0.363 0 0.162 0.050 0.331 0.156 0.469l4.825 6.644c0.156 0.212 0.394 0.331 0.644 0.331 0.262 0.012 0.5-0.113 0.65-0.325z"></path>
+	<path d="M32 16c0-8.838-7.163-16-16-16s-16 7.162-16 16 7.162 16 16 16 16-7.163 16-16zM2.669 16c0-7.363 5.963-13.325 13.325-13.325 7.356 0 13.331 5.969 13.331 13.325s-5.969 13.325-13.331 13.325c-7.356 0-13.325-5.963-13.325-13.325z"></path>
+	</symbol>
+	<symbol id="icon-wall-clock2" viewBox="0 0 32 32">
+	<title>wall-clock2</title>
+	<path d="M16.008 27.384c-6.284-0.004-11.377-5.099-11.377-11.384 0-6.287 5.097-11.383 11.384-11.383s11.383 5.097 11.383 11.383v0c-0.019 6.281-5.108 11.368-11.388 11.383h-0.001zM16.008 0.006c-8.83 0-15.987 7.158-15.987 15.987s7.158 15.987 15.987 15.987c8.83 0 15.987-7.158 15.987-15.987v0c-0.025-8.82-7.168-15.963-15.985-15.987h-0.002zM17.074 8.7h-2.675v10.658l6.917 3.358 1.421-2.299-5.664-2.47v-9.241z"></path>
+	</symbol>
+	<symbol id="icon-list" viewBox="0 0 32 32">
+	<title>list</title>
+	<path d="M14.188 0c7.836 0 14.188 6.352 14.188 14.188s-6.352 14.188-14.188 14.188v0c-7.836 0-14.188-6.352-14.188-14.188s6.352-14.188 14.188-14.188v0z"></path>
+	</symbol>
+	<symbol id="icon-photo" viewBox="0 0 32 32">
+	<title>photo</title>
+	<path d="M29.44 12.83h-20.48v12.8h20.48v-12.8zM32 10.27v17.92h-25.6v-17.92h25.6zM28.16 7.71v-2.56h-26.88v19.2h2.56v-16.64h24.32zM21.527 15.714l-2.502 3.828-1.914-2.356-4.71 5.888h14.72l-5.594-7.36zM12.8 16.67c0-0.707 0.573-1.28 1.28-1.28s1.28 0.573 1.28 1.28v0c0 0.707-0.573 1.28-1.28 1.28s-1.28-0.573-1.28-1.28v0z"></path>
+	</symbol>
+	<symbol id="icon-play" viewBox="0 0 32 32">
+	<title>play</title>
+	<path d="M21.278 15.374l-6.645-4.83c-0.13-0.096-0.294-0.154-0.472-0.154-0.442 0-0.8 0.358-0.801 0.8v9.657c0 0.001 0 0.002 0 0.002 0 0.441 0.358 0.799 0.799 0.799 0.178 0 0.343-0.058 0.476-0.157l-0.002 0.002 6.645-4.826c0.202-0.146 0.332-0.381 0.332-0.646s-0.13-0.5-0.329-0.645l-0.002-0.002z"></path>
+	<path d="M16.001 0.002c-8.838 0-16.001 7.162-16.001 16.001 0 8.835 7.162 15.995 16.001 15.995 8.836 0 15.999-7.161 15.999-15.995 0.001-8.838-7.163-16.001-15.999-16.001zM16.001 29.328c-7.36 0-13.328-5.964-13.328-13.326 0-7.358 5.967-13.33 13.328-13.33 7.359 0 13.326 5.971 13.326 13.33 0.001 7.361-5.966 13.326-13.326 13.326z"></path>
+	</symbol>
+	<symbol id="icon-share" viewBox="0 0 32 32">
+	<title>share</title>
+	<path d="M24.897 12.022c-1.215 0-2.279 0.455-3.039 1.215l-10.787-6.228c0.153-0.304 0.153-0.761 0.153-1.065 0-2.582-1.975-4.557-4.557-4.557-2.583 0-4.559 1.975-4.559 4.557 0 2.583 1.975 4.559 4.559 4.559 1.215 0 2.278-0.455 3.037-1.216l10.787 6.23c-0.151 0.304-0.151 0.759-0.151 1.063s0 0.761 0.151 1.065l-10.787 6.381c-0.759-0.761-1.823-1.216-3.037-1.216-2.433 0.002-4.405 1.973-4.407 4.406v0c0.002 2.433 1.974 4.406 4.407 4.407h0c2.433-0.002 4.404-1.974 4.404-4.407v0c0-0.304 0-0.607-0.151-1.063l10.787-6.381c0.759 0.759 1.823 1.216 3.039 1.216 2.582 0 4.557-1.975 4.557-4.559s-1.823-4.406-4.406-4.406z"></path>
+	</symbol>
+	<symbol id="icon-star" viewBox="0 0 32 32">
+	<title>star</title>
+	<path d="M15.855 0.727l-4.8 10.036-11.055 1.455 8 7.709-1.891 10.909 9.745-5.236 9.745 5.236-1.891-10.909 8-7.709-11.055-1.455-4.8-10.036zM15.855 6.836l3.055 6.4 6.982 1.018-5.091 4.945 1.309 6.982-6.255-3.345-6.255 3.345 1.309-6.982-5.091-5.091 6.982-1.018 3.055-6.255z"></path>
+	</symbol>
+	<symbol id="icon-star-filled" viewBox="0 0 32 32">
+	<title>star-filled</title>
+	<path d="M15.855 0.727l-4.8 10.036-11.055 1.455 8 7.709-1.891 11.055 9.745-5.236 9.891 5.236-2.036-11.055 8-7.709-10.909-1.455-4.945-10.036z"></path>
+	</symbol>
+	<symbol id="icon-list-table" viewBox="0 0 32 32">
+	<title>list-table</title>
+	<path d="M29.76 8.907h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM18.187 27.84h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM18.187 18.951h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM18.187 8.907h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM6.613 27.84h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM6.613 18.951h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM6.613 8.907h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0zM24.8 13.991h4.96c0.914 0 1.653 2.393 1.653 3.307s-0.74 1.653-1.653 1.653v0h-4.96c-0.913 0-1.653-0.74-1.653-1.653v0c0-0.914 0.74-3.307 1.653-3.307z"></path>
+	</symbol>
+	<symbol id="icon-wall-clock" viewBox="0 0 32 32">
+	<title>wall-clock</title>
+	<path d="M16 0c-8.822 0-16 7.178-16 16s7.178 16 16 16c8.823 0 16-7.178 16-16s-7.177-16-16-16zM16 29.364c-7.369 0-13.364-5.995-13.364-13.364s5.995-13.364 13.364-13.364 13.363 5.995 13.363 13.364c0 7.369-5.995 13.364-13.363 13.364z"></path>
+	<path d="M17.318 15.476v-9.061c0-0.728-0.59-1.318-1.318-1.318s-1.318 0.59-1.318 1.318v9.585c0 0.409 0.19 0.77 0.482 1.012 0.012 0.015 0.021 0.032 0.034 0.046l4.943 5.613c0.261 0.295 0.624 0.447 0.99 0.447 0.309 0 0.62-0.108 0.87-0.329 0.546-0.481 0.599-1.314 0.118-1.861l-4.801-5.451z"></path>
+	</symbol>
+	<symbol id="icon-comment" viewBox="0 0 32 32">
+	<title>comment</title>
+	<path d="M16 4c7.352 0 13.333 4.789 13.333 10.676 0 6.556-6.86 10.615-13.213 10.615-2.583 0-4.511-0.529-5.859-0.859-1.333 0.817-2.127 1.383-5.696 2.427 0.713-1.831 0.964-3.664 0.803-5.687-1.117-1.333-2.7-3.2-2.7-6.496-0.001-5.887 5.98-10.676 13.332-10.676zM16 1.333c-8.451 0-16 5.635-16 13.343 0 2.733 0.984 5.417 2.729 7.5 0.073 2.44-1.364 5.941-2.657 8.491 3.469-0.627 8.401-2.011 10.637-3.381 1.891 0.46 3.7 0.671 5.412 0.671 9.445 0 15.88-6.449 15.88-13.281-0.001-7.748-7.603-13.341-16.001-13.341zM11.333 14.667c0 1.105-0.895 2-2 2-1.104 0-2-0.895-2-2s0.896-2 2-2c1.105 0 2 0.895 2 2zM16 12.667c-1.104 0-2 0.895-2 2s0.896 2 2 2c1.105 0 2-0.895 2-2s-0.895-2-2-2zM22.667 12.667c-1.104 0-2 0.895-2 2s0.896 2 2 2c1.105 0 2-0.895 2-2s-0.895-2-2-2z"></path>
+	</symbol>
+	</defs>
+</svg>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/custom.js?ver1.0"></script>
+
+</body>
+</html>
