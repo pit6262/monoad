@@ -1434,7 +1434,8 @@ label {
   .header-controls__item {
     margin-right: 1.9rem; }
   .main {
-    padding-top: 11rem; }
+    padding-top: 11rem;
+    min-height: 1px; }
   .wrap {
     display: block; }
     .wrap .sidebar {
