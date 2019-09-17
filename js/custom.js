@@ -12,15 +12,54 @@ $(function(){
 	 * Styler
 	/* ---------------------------------------------- */
     if($('.styler').length){
-        $('.styler').styler();
+        $('.styler').styler({
+        	singleSelectzIndex: 9,
+        	selectVisibleOptions: 10,
+        });
     };
 
+    /* ---------------------------------------------- /*
+	 * Slider
+	/* ---------------------------------------------- */
+    if($('.banner-slider').length){
+        $('.banner-slider').slick({
+        	arrows: false,
+        	dots: true,
+        	adaptiveHeight: true,
+        });
+    };
 
+    /* ---------------------------------------------- /*
+	 * Popup
+	/* ---------------------------------------------- */
+    if($('[data-fancybox]').length){
+        $("[data-fancybox]").fancybox({
+    		autoFocus: false,
+    		// touch: false,
+    		buttons: [
+    			// "zoom",
+    			//"share",
+    			// "slideShow",
+    			//"fullScreen",
+    			//"download",
+    			// "thumbs",
+    			"close"
+    		],
+    		
+    	});
+    }
+    
+    
     /* ---------------------------------------------- /*
 	 * Dropdown
 	/* ---------------------------------------------- */
   
-    $('.btn-search').on('click', function(){
+    $('.accordion-mobile__toggle').on('click', function(){
+    	$(this).toggleClass('active').parents('.accordion-mobile').find('.accordion-mobile__body').slideToggle(200);
+    	return false;
+    });
+
+     $('.btn-search').on('click', function(){
     	$(this).parent().find('.dropdown-block').toggleClass('open');
     	return false;
     });
