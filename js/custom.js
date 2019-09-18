@@ -163,10 +163,6 @@ $(function(){
     }
     showMoreText();
 
-     $('.accordion-mobile__toggle').on('click', function(){
-    	$(this).toggleClass('active').parents('.accordion-mobile').find('.accordion-mobile__body').slideToggle(200);
-    	return false;
-    });
 
     function openMenuMobile() {
     	$('.btn-toggle-menu').on('click', function(){

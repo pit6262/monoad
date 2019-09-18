@@ -1334,7 +1334,7 @@ label {
     content: counter(li);
     counter-increment: li; }
   .step-list__item {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     position: relative; }
     .step-list__item:before {
       position: absolute;
@@ -1357,7 +1357,7 @@ label {
 
 .order-button {
   text-align: right;
-  margin-top: 2rem; }
+  margin-top: 4rem; }
 
 .advantages {
   text-align: center;
@@ -1402,7 +1402,7 @@ label {
     right: 1rem; }
     .cart-list__remove .icon {
       display: block;
-      font-size: 1.8rem; }
+      font-size: 1.4rem; }
 
 .dropdown-block .cart-list {
   border-bottom: .1rem solid #d0d0d0;
@@ -1907,19 +1907,19 @@ label {
   .nav-tab-list {
     display: block;
     border: none; }
-  .nav-tab-list__item.active .nav-tab-list__link {
-    border: none; }
   .nav-tab-list__link {
-    padding: 1rem 1rem 1rem 3.6rem; }
+    padding: 1rem 1rem 1rem 3.6rem;
+    border: none; }
     .nav-tab-list__link:after {
-      top: .7rem;
+      top: 1rem;
       left: 0; }
   .tab-cont {
     padding-top: 2rem; }
   .accordion-mobile {
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     .accordion-mobile__body {
-      display: none; }
+      display: none;
+      padding: .1rem 0; }
     .accordion-mobile__toggle {
       margin-left: 1rem;
       vertical-align: middle;
@@ -1931,7 +1931,7 @@ label {
         -ms-transform: rotate(180deg);
         transform: rotate(180deg); }
   .cart-list__item {
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 1.6rem;
     text-align: center; }
   .cart-list__img {
     max-width: 26rem;
