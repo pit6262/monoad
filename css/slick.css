@@ -82,6 +82,7 @@
     height: 100%;
     min-height: 1px;
 }
+.slick-slide:focus {outline: none;}
 [dir='rtl'] .slick-slide
 {
     float: right;
@@ -127,6 +128,9 @@
     vertical-align: middle;
     margin: 0 8px;
 }
+.slick-dots li:first-child:last-child {
+    display: none;
+}
 .slick-dots li.slick-active button {background: #131313;}
 .slick-dots button {
     display: block;
@@ -136,7 +140,7 @@
     text-indent: -999px;
     overflow: hidden;
     padding: 0;
-    background: #fff;
+    background: #ccc;
     border:  none;
-    box-shadow: 0 3px 18px rgba(0,0,0,.4)
+    box-shadow: 0 3px 18px rgba(0,0,0,.3)
 }

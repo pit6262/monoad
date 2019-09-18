@@ -26,9 +26,90 @@ $(function(){
         	arrows: false,
         	dots: true,
         	adaptiveHeight: true,
+        	autoplay: true,
+        	autoplaySpeed: 2000,
         });
     };
 
+    if($('.reviews-list').length){
+		$('.reviews-list').slick({
+		    slidesToShow: 5, 
+		    slidesToScroll: 1,
+		    dots: true,
+		    arrows: false,
+		    adaptiveHeight: true,
+        	autoplay: true,
+        	autoplaySpeed: 2000,
+		    responsive: [
+		    	{
+		    		breakpoint: 1259,
+		    		settings: {
+		    			slidesToShow: 4,
+		    			slidesToScroll: 1,
+		    			
+		    		}
+		    	},
+		    	{
+		    		breakpoint: 1100,
+		    		settings: {
+		    			slidesToShow: 3,
+		    			slidesToScroll: 1,
+		    			
+		    		}
+		    	},
+		    	{
+		    		breakpoint: 992,
+		    		settings: {
+		    			slidesToShow: 2,
+		    			slidesToScroll: 1,
+		    			
+		    		}
+		    	},
+		    	{
+		    		breakpoint: 560,
+		    		settings: {
+		    			slidesToShow: 1,
+		    			slidesToScroll: 1,
+		    			
+		    		}
+		    	}
+		    ]
+		});
+	};
+
+	if($('.products-slider').length){
+		$('.products-slider').slick({
+		    slidesToShow: 4, 
+		    slidesToScroll: 1,
+		    dots: true,
+		    arrows: false,
+		    adaptiveHeight: true,
+        	autoplay: true,
+        	autoplaySpeed: 2000,
+		    responsive: [
+		    	{
+		    		breakpoint: 1259,
+		    		settings: {
+		    			slidesToShow: 3,
+		    			slidesToScroll: 1,
+		    			
+		    		}
+		    	},
+
+		    	{
+		    		breakpoint: 768,
+		    		settings: {
+		    			slidesToShow: 2,
+		    			slidesToScroll: 1,
+		    			
+		    		}
+		    	},
+		    	
+		    ]
+		});
+	};
+
+    
     /* ---------------------------------------------- /*
 	 * Popup
 	/* ---------------------------------------------- */
@@ -48,10 +129,12 @@ $(function(){
     		
     	});
     }
+
+
     
     
     /* ---------------------------------------------- /*
-	 * Dropdown
+	 * Base
 	/* ---------------------------------------------- */
   
     $('.accordion-mobile__toggle').on('click', function(){
@@ -61,6 +144,27 @@ $(function(){
 
      $('.btn-search').on('click', function(){
     	$(this).parent().find('.dropdown-block').toggleClass('open');
+    	return false;
+    });
+
+    function showMoreText() {
+    	$('.show-more').on('click', function(){
+	    	$(this).parents('.short-block').hide()
+	    	$(this).parents('.toggle-block').find('.full-block').show()
+
+	    	return false;
+	    });
+
+	    $('.navbar__close, .navbar__overlay').on('click', function(){
+	    	$('.navbar').removeClass('open');
+	    	
+	    	return false;
+	    });
+    }
+    showMoreText();
+
+     $('.accordion-mobile__toggle').on('click', function(){
+    	$(this).toggleClass('active').parents('.accordion-mobile').find('.accordion-mobile__body').slideToggle(200);
     	return false;
     });
 
@@ -95,20 +199,6 @@ $(function(){
 
     openCategoryMobile();
 
-    $('.dropdown-hover').hover(function(){
-    	$('.dropdown-block').removeClass('open');
-    	$(this).find('.dropdown-block').addClass('open');
-    	
-    });
-
-    $(document).on('click', function(event){
-      if( $(event.target).closest(".dropdown-hover").length ) 
-        return;
-      
-      $(".dropdown-hover .dropdown-block").removeClass('open');
-      event.stopPropagation();
-    });
-
 
 	$(document).on('click', function(event){
       if( $(event.target).closest(".dropdown").length ) 
@@ -137,13 +227,18 @@ $(function(){
 
 });
 
+
+
+
 $(".header").removeClass("fixed");
 $(window).on('scroll load', function(){
 
 	if ($(this).scrollTop() > 0) {
 		$(".header").addClass("fixed");
+		// $(".page-catalog .header-top").slideUp(200);
 	} else {
 		 $(".header").removeClass("fixed");
+		 // $(".page-catalog .header-top").slideDown(200);
 	};
 
 	
@@ -156,27 +251,9 @@ $(window).on('load scroll', function() {
     else {
       $('#main-footer').addClass('open');
     }
-        
-   
 }); 
 
 
-// var hm = function(){
-
-	
-// 	var h_footer = $('#site-footer').height();
-// 	var height_main = $('.main-wrapper').height();
-// 	var summ = height_main - h_footer
-// 	alert(summ)
-// 	if($(window).scrollTop() < summ) {
-//       $('#main-footer').addClass('open');
-//     }
-//     else {
-//       $('#main-footer').removeClass('open');
-//     }
-// }
-
-// $(window).on('load scroll', hm);
 
 //fixed header and footer	
 var hf = function(){
@@ -189,47 +266,3 @@ var hf = function(){
 }
 
 $(window).on('load resize', hf);
-
-
-// (function(){
-// 	var a = document.querySelector('#main-footer'), b = null, P = 0;
-// 	window.addEventListener('scroll', Ascroll, false);
-// 	document.body.addEventListener('scroll', Ascroll, false);
-// 	function Ascroll() {
-// 	  if (b == null) {
-// 	    var Sa = getComputedStyle(a, ''), s = '';
-// 	    for (var i = 0; i < Sa.length; i++) {
-// 	      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-// 	        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
-// 	      }
-// 	    }
-// 	    b = document.createElement('div');
-// 	    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-// 	    a.insertBefore(b, a.firstChild);
-// 	    var l = a.childNodes.length;
-// 	    for (var i = 1; i < l; i++) {
-// 	      b.appendChild(a.childNodes[1]);
-// 	    }
-// 	    a.style.height = b.getBoundingClientRect().height + 'px';
-// 	    a.style.padding = '0';
-// 	    a.style.border = '0';
-// 	  }
-// 	  var Ra = a.getBoundingClientRect(),
-// 	      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('#main').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
-// 	  if ((Ra.top - P) <= 0) {
-// 	    if ((Ra.top - P) <= R) {
-// 	      b.className = 'stop';
-// 	      b.style.top = - R +'px';
-// 	    } else {
-// 	      b.className = 'open';
-// 	      b.style.top = P + 'px';
-// 	    }
-// 	  } else {
-// 	    b.className = '';
-// 	    b.style.top = '';
-// 	  }
-// 	  window.addEventListener('resize', function() {
-// 	    a.children[0].style.width = getComputedStyle(a, '').width
-// 	  }, false);
-// 	}
-// })()
