@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Название проекта - Главная</title>
+	<title>Название проекта - Карточка товара</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css" />
@@ -13,7 +13,7 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
-<body class="loaded">
+<body class="loaded page-card">
 
 
 <!-- BEGIN BODY -->
@@ -182,246 +182,149 @@
 	<!-- BEGIN CONTENT -->
 	<main class="main" id="main">
 		<div class="container-fluid">
-			<div class="wrap">
-				<aside class="sidebar">
-					<div class="sidebar__item">
-						<div class="h4"><a href="#">ОБУВЬ</a></div>
-						<div class="h4"><a href="#">АКСЕСУАРЫ</a></div>
+			<div class="card-wrapper ">
+				<div class="card-wrapper__middle">
+					<div class="card-slider">
+						<div class="card-slider__item"><img src="img/products/120697.jpg" alt=""></div>
+						<div class="card-slider__item"><img src="img/products/860879.jpg" alt=""></div>
+						<div class="card-slider__item"><img src="img/products/820115.jpg" alt=""></div>
+						<div class="card-slider__item"><img src="img/products/350608.jpg" alt=""></div>
+						<div class="card-slider__item"><img src="img/products/317713.jpg" alt=""></div>
 					</div>
-				</aside>
-				<div class="content">
-					<div class="banner-slider">
-						<div>
-							<a href="#">
-								<picture class="banner-slider__img">
-	                                <source media="(max-width: 550px)" srcset="img/slider/550x450_3.png">
-	                                <source media="(max-width: 1024px)" srcset="img/slider/1024x450_3.png">
-	                                <img src="img/slider/1440x450_3.png" alt="#">
-	                            </picture>
-							</a>
+				</div>
+				<div class="card-wrapper__left">
+					<div class="card-sticky sticky">
+						<div class="card-description">
+
+							<h1 class="h3">Dr. Martens Classic Black</h1>
+
+							<p>Кожа Smooth плотная, глянцевая. Культовая классика выпускается в неизменном фасоне с 1960 года в классических цветах: Черный и Темно вишневый. С каждым годом появляются новые лимитированные цвета. Носок закругленный. В моделях Smooth шнурки всегда в черном цвете. Прошивка желтого цвета в большинстве моделях за исключением некоторых. Не требует тщательного ухода. 
+							</p>
 						</div>
-						<div>
-							<a href="#">
-								<picture class="banner-slider__img">
-	                                <source media="(max-width: 550px)" srcset="img/slider/550x450_2.png">
-	                                <source media="(max-width: 1024px)" srcset="img/slider/1024x450_2.png">
-	                                <img src="img/slider/1440x450_2.png" alt="#">
-	                            </picture>
-                            </a>
-						</div>
-						<div>
-							<a href="#">
-								<picture class="banner-slider__img">
-	                                <source media="(max-width: 550px)" srcset="img/slider/550x450_4.png">
-	                                <source media="(max-width: 1024px)" srcset="img/slider/1024x450_4.png">
-	                                <img src="img/slider/1440x450_4.png" alt="#">
-	                            </picture>
-                            </a>
+					</div>
+				</div>
+				<div class="card-wrapper__right">
+					<div class="card-sticky sticky">
+						<div class="card-info">
+							<div class="product-tags mb5">
+								<div class="product-tags__price-old">19 000 Р</div>
+								<div class="product-tags__price text-danger">13 300 Р</div>
+							</div>
+							<p>* Бесплатная доставка по России и Украине</p>
+							<div class="add-to-cart">
+								<select class="styler">
+									<option value="">Выберите Размер</option>
+									<option value="">35</option>
+									<option value="">36</option>
+									<option value="">37</option>
+									<option value="">38</option>
+								</select>
+								<a href="#" class="btn btn--dark">В корзину</a>
+							</div>
+
+							<ul class="card-info-list">
+								<li><a href="#"><svg class="icon icon-play"><use xlink:href="#icon-play"></use></svg>Видео-обзор</a></li>
+								<li><a href="#"><svg class="icon icon-photo"><use xlink:href="#icon-photo"></use></svg>Фото покупателей</a></li>
+								<li><a href="#"><svg class="icon icon-list-table"><use xlink:href="#icon-list-table"></use></svg>Таблица размеров</a></li>
+								<li><a href="#"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>Мониторить</a></li>
+								<li><a href="#"><svg class="icon icon-share"><use xlink:href="#icon-share"></use></svg>Рассказать друзьям</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<section class="section">
-				<div class="section-header">
-					<h2>Сезонные скидки</h2>
-					<p>От сезона к сезону наш магазин предлагает скидки до 2000 грн. на ряд моделей из каталога товаров</p>
-					<div class=" products products-slider">
-						<div class="">
-							<div class="product-card">
-								<div class="product-card__img">
-									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+
+			<div class="recommendations-container">
+				<div class="recommendations-slider">
+					<div>
+						<div class="product-card">
+							<div class="product-card__img">
+								<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+								<div class="product-tags">
+									<div class="product-tags__price">13 300 Р</div>
 								</div>
-								<div class="product-card__body">
-									<span class="btn-favorites">
-										<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
-										<svg class="icon icon-star-filled"><use xlink:href="#icon-star-filled"></use></svg>
-									</span>
-									<p >название бренда</p>
-									<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
-									<div class="product-tags">
-										<div class="badge-new">new</div>
-										<div class="product-tags__price">10 900 Р</div>
-									</div>
-									
-								</div>
+								
 							</div>
 						</div>
-						<div class="">
-							<div class="product-card">
-								<div class="product-card__img">
-									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+					</div>
+					<div>
+						<div class="product-card">
+							<div class="product-card__img">
+								<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+								<div class="product-tags">
+									<div class="product-tags__price">13 300 Р</div>
 								</div>
-								<div class="product-card__body">
-									<span class="btn-favorites">
-										<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
-										<svg class="icon icon-star-filled"><use xlink:href="#icon-star-filled"></use></svg>
-									</span>
-									<p >название бренда</p>
-									<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
-									<div class="product-tags">
-										<div class="product-tags__price-old">19 000 Р</div>
-										<div class="product-tags__price text-danger">13 300 Р</div>
-									</div>
-									
-								</div>
+								
 							</div>
 						</div>
-						<div class="">
-							<div class="product-card">
-								<div class="product-card__img">
-									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+					</div>
+					<div>
+						<div class="product-card">
+							<div class="product-card__img">
+								<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+								<div class="product-tags">
+									<div class="product-tags__price">13 300 Р</div>
 								</div>
-								<div class="product-card__body">
-									<span class="btn-favorites">
-										<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
-										<svg class="icon icon-star-filled"><use xlink:href="#icon-star-filled"></use></svg>
-									</span>
-									<p >название бренда</p>
-									<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
-									<div class="product-tags">
-										<div class="product-tags__price">10 900 Р</div>
-									</div>
-									
-								</div>
+								
 							</div>
 						</div>
-						<div class="">
-							<div class="product-card">
-								<div class="product-card__img">
-									<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+					</div>
+					<div>
+						<div class="product-card">
+							<div class="product-card__img">
+								<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+								<div class="product-tags">
+									<div class="product-tags__price">13 300 Р</div>
 								</div>
-								<div class="product-card__body">
-									<span class="btn-favorites">
-										<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
-										<svg class="icon icon-star-filled"><use xlink:href="#icon-star-filled"></use></svg>
-									</span>
-									<p >название бренда</p>
-									<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
-									<div class="product-tags">
-										<div class="product-tags__price">10 900 Р</div>
-									</div>
-									
-								</div>
+								
 							</div>
 						</div>
-						
 					</div>
-					<div class="text-center mt20">
-						<a href="#" class="btn btn--dark">Посмотреть все предложения</a>
-					</div>
-				</div>
-			</section>
-			<section class="section section--default">
-				<div class="section-header">
-					<h2>Преимущества Monoad</h2>
-				</div>
-				<div class="advantages">
-					<div class="advantages__item">
-						<svg class="icon icon-monoad1"><use xlink:href="#icon-monoad1"></use></svg>
-						<div class="h4">Самый широкий ассортимент в Украине</div>
-						<p>В нашем магазине доступны для заказа более 500 наименований оригинальной продукции Dr. Martens</p>
-					</div>
-					<div class="advantages__item">
-						<svg class="icon icon-monoad2"><use xlink:href="#icon-monoad2"></use></svg>
-						<div class="h4">Бесплатный обмен и возврат</div>
-						<p>В случае если обувь не подойдет, в течении 100 дней мы бесплатно обменяем ваш товар или вернем средства</p>
-					</div>
-					<div class="advantages__item">
-						<svg class="icon icon-monoad5"><use xlink:href="#icon-monoad5"></use></svg>
-						<div class="h4">Бесплатная доставка по Украине</div>
-						<p>Если желаемой модели нет в наличии, так же бесплатно привезем под заказ</p>
-					</div>
-					<div class="advantages__item">
-						<svg class="icon icon-monoad3"><use xlink:href="#icon-monoad3"></use></svg>
-						<div class="h4">Крупнейшее сообщество любителей Dr. Martens</div>
-						<p>На сегодняшний день разбираемся в Dr. Martens лучше чем кто-либо на просторах СНГ, готовы помочь в любом вопросе, что касается бренда.</p>
-					</div>
-					<div class="advantages__item">
-						<svg class="icon icon-monoad6"><use xlink:href="#icon-monoad6"></use></svg>
-						<div class="h4">Исключительно оригинальные Dr. Martens</div>
-						<p>Работаем только с официальными дилерами.</p>
-					</div>
-					<div class="advantages__item">
-						<svg class="icon icon-monoad4"><use xlink:href="#icon-monoad4"></use></svg>
-						<div class="h4">От фанатов к фанатам</div>
-						<p>Мы не только продаем мартинсы а и носим их.</p>
-					</div>
-				</div>
-
-			</section>
-
-			<section class="section ">
-				<div class="section-header">
-					<h2>Отзывы о нашей работе</h2>
-				</div>
-				<div class="reviews-list">
-					<div class="reviews-list__item">
-						<div class="reviews-list__img">
-							<img src="img/reviews/photo-1.jpg" alt="">
+					<div>
+						<div class="product-card">
+							<div class="product-card__img">
+								<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+								<div class="product-tags">
+									<div class="product-tags__price">13 300 Р</div>
+								</div>
+								
+							</div>
 						</div>
-						<div class="reviews-list__title">@tanyaMoscow</div>
-						<p>Прекрасная обувь, это уже пятая моя покупка в битнике, всем горячо рекомендую, всё приходит очень быстро.</p>
 					</div>
-					<div class="reviews-list__item">
-						<div class="reviews-list__img">
-							<img src="img/reviews/photo-2.jpg" alt="">
+					<div>
+						<div class="product-card">
+							<div class="product-card__img">
+								<a href="#"><img src="img/products/pr1.jpg" alt=""></a>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title"><a href="#">1460 Black Nappa</a></div>
+								<div class="product-tags">
+									<div class="product-tags__price">13 300 Р</div>
+								</div>
+								
+							</div>
 						</div>
-						<div class="reviews-list__title">@goriksen</div>
-						<p>Ботинки из летней коллекции 2018 года. Коллаборация с татуировщиком из США Грезом. Художник выбрал классический олд-скул, взяв за основу пронзенную кинжалом розу.</p>
-					</div>
-					<div class="reviews-list__item">
-						<div class="reviews-list__img">
-							<img src="img/reviews/photo-3.jpg" alt="">
-						</div>
-						<div class="reviews-list__title">@valeksanek</div>
-						<p>Ребят это просто шикарно, осталось только не забыть их с себя вовремя снимать, хотя бы на ночь)))</p>
-					</div>
-					<div class="reviews-list__item">
-						<div class="reviews-list__img">
-							<img src="img/reviews/photo-4.jpg" alt="">
-						</div>
-						<div class="reviews-list__title">@emiliyarakutten</div>
-						<p>На удивление пришло ооочень быстро, честно, не ожидала такой суперской доставки, теперь буду брать только у вас, а красота какая)</p>
-					</div>
-					<div class="reviews-list__item">
-						<div class="reviews-list__img">
-							<img src="img/reviews/photo-5.jpg" alt="">
-						</div>
-						<div class="reviews-list__title">@senka155</div>
-						<p>Прекрасная обувь, это уже пятая моя покупка в битнике, всем горячо рекомендую, всё приходит очень быстро.</p>
 					</div>
 				</div>
-			</section>
-
-			<section class="section section--default">
-				<div class="section-header">
-					<h2>Следите за нами в социальных сетях</h2>
-					<p>подпишитесь на наши новости и получите скидку 10% на покупку</p>
-				</div>
-				<div class="row social-grid">
-					<div class="col-lg-3 col-md-4 col-sm-6 social-grid__item">
-						<div class="social-grid__number">-10</div>
-						<p>Подписчиков в Инстаграмме</p>
-						<a href="#" class="btn btn--dark"><svg class="icon icon-instagram btn-icon-left"><use xlink:href="#icon-instagram"></use></svg> Подписаться</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 social-grid__item">
-						<div class="social-grid__number">13 000</div>
-						<p>Подписчиков Вконтакте</p>
-						<a href="#" class="btn btn--dark"><svg class="icon icon-vk btn-icon-left"><use xlink:href="#icon-vk"></use></svg> Подписаться</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 social-grid__item">
-						<div class="social-grid__number">56 000</div>
-						<p>Подписчиков в Facebook</p>
-						<a href="#" class="btn btn--dark"><svg class="icon icon-facebook btn-icon-left"><use xlink:href="#icon-facebook"></use></svg> Подписаться</a>
-					</div>
-				</div>
-
-			</section>
-
+			</div>
 		</div>
 	</main>
 	<!-- CONTENT EOF   -->
-	
 	
 	<!-- BEGIN FOOTER -->
 	<footer class="footer footer--sticky" id="main-footer">
