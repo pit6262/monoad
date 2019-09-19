@@ -1353,9 +1353,10 @@ label {
       background-color: #131313;
       border-radius: 50%;
       color: #fff;
+      font-weight: 700;
       text-align: center;
       line-height: 2.6rem;
-      font-size: 1.8rem; }
+      font-size: 1.6rem; }
   .step-list__title {
     margin-bottom: .5rem; }
   .step-list__body {
@@ -1601,7 +1602,14 @@ label {
       position: absolute;
       font-size: 2.2rem;
       left: 0;
-      top: .6rem; }
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+  .card-info-list--xl a {
+    padding: 1.2rem 0 1.2rem 4.5rem; }
+    .card-info-list--xl a .icon {
+      font-size: 3.2rem; }
 
 .recommendations-slider {
   margin: 0 -1.5rem; }
@@ -1612,6 +1620,48 @@ label {
     max-width: 18rem;
     margin-left: auto;
     margin-right: auto; }
+
+.table-size {
+  padding-left: 4rem; }
+  .table-size .step-list__item {
+    margin-bottom: 4rem; }
+    .table-size .step-list__item:before {
+      left: -4rem; }
+  .table-size .step-list__title {
+    margin-bottom: 2rem; }
+
+.table-size-width-full {
+  margin-left: -4rem; }
+
+.table-size-step {
+  text-align: center; }
+  .table-size-step img {
+    margin-left: auto;
+    margin-right: auto; }
+
+.table {
+  width: 100%; }
+  .table-overflow {
+    overflow-x: auto; }
+  .table th {
+    padding: .5rem 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .table td {
+    padding: .5rem .5rem;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    border-left: .1rem solid #f1f1f1; }
+  .table--hover tr:hover th, .table--hover tr:hover td {
+    background: #f1f1f1; }
+    .table--hover tr:hover th:first-child, .table--hover tr:hover td:first-child {
+      border-radius: 1.5rem 0 0 1.5rem; }
+    .table--hover tr:hover th:last-child, .table--hover tr:hover td:last-child {
+      border-radius: 0 1.5rem 1.5rem 0; }
+  .table--hover tr:hover td {
+    text-shadow: .1rem 0 0 #131313; }
 
 /* PRODUCT CARD list ========= */
 .products {
@@ -1943,7 +1993,9 @@ label {
   .step-list__item {
     padding-left: 4.5rem; }
     .step-list__item:before {
-      left: 0; } }
+      left: 0; }
+  .table-size .step-list__item {
+    padding-left: 0; } }
 
 @media screen and (min-width: 992px) {
   .visible-md {
@@ -2024,11 +2076,21 @@ label {
     display: block;
     margin: 5rem 0;
     text-align: center; }
-  .card-info-list {
+  .card-info .card-info-list {
     -webkit-columns: 2;
     columns: 2;
     -webkit-column-gap: 2rem;
     column-gap: 2rem; }
+  .table-size {
+    padding-left: 0; }
+  .table-size .step-list__item:before {
+    left: 0; }
+  .table-size .step-list__title {
+    padding-left: 4rem; }
+  .table-size-width-full {
+    margin-left: -1rem; }
+  .popup {
+    padding: 6rem 4.4rem 3rem !important; }
   /* Footer */
   .footer--sticky {
     display: none; }
@@ -2181,6 +2243,11 @@ label {
     max-width: 15rem;
     margin-left: auto;
     margin-right: auto; }
+  .table th {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .table td {
+    font-size: 1.1rem; }
   /* Product card */
   .product-card {
     position: relative;
@@ -2199,7 +2266,11 @@ label {
       position: static; }
     .product-card__title {
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0; }
+  .fancybox-slide--html {
+    padding: 0 !important; }
+  .fancybox-content {
+    border-radius: 0 !important; } }
 
 @media screen and (max-width: 559px) {
   .advantages__item {
@@ -2214,6 +2285,6 @@ label {
     margin-right: auto; } }
 
 @media screen and (max-width: 350px) {
-  .card-info-list {
+  .card-info .card-info-list {
     -webkit-columns: 1;
     columns: 1; } }
