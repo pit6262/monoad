@@ -1173,8 +1173,12 @@ label {
   left: 0;
   right: 0;
   bottom: 1rem; }
+  .banner-slider .slick-dots .slick-active button {
+    border-color: #131313; }
   .banner-slider .slick-dots button {
-    background: #fff; }
+    background: #fff;
+    border-color: #fff;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.3); }
 
 .section {
   padding: 6rem 0 5rem; }
@@ -1525,6 +1529,9 @@ label {
   align-items: center;
   padding: 10rem 0 5rem; }
 
+.card-slider:focus {
+  outline: none; }
+
 .card-slider__item {
   height: 90vh;
   display: -webkit-box;
@@ -1540,12 +1547,49 @@ label {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 10rem 0 5rem; }
+  .card-slider__item:focus {
+    outline: none; }
   .card-slider__item img {
     -webkit-box-flex: 0;
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
-    max-height: 100%; }
+    max-height: 100%;
+    cursor: url("../img/zoom-in-16x16.png"), pointer; }
+
+.page-card-gallery .main {
+  display: none; }
+
+.card-gallery {
+  display: none;
+  position: relative;
+  z-index: 100;
+  background: #fff;
+  width: 100%; }
+  .card-gallery.open {
+    display: block; }
+  .card-gallery__item {
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 4rem 0;
+    cursor: url("../img/zoom-in-16x16.png"), pointer; }
+    .card-gallery__item img {
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      max-height: 100%; }
 
 .card-info, .card-description {
   width: 100%;
@@ -1555,6 +1599,8 @@ label {
 .card-description {
   overflow: hidden;
   overflow-y: auto; }
+  .card-description__more {
+    display: none; }
 
 .add-to-cart {
   display: -webkit-box;
@@ -2081,6 +2127,29 @@ label {
     columns: 2;
     -webkit-column-gap: 2rem;
     column-gap: 2rem; }
+  .card-description h1, .card-description .h3 {
+    margin-bottom: 1rem; }
+  .card-description__more {
+    display: inline-block;
+    font-family: 'Bebas Neue';
+    font-size: 1.7rem;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative; }
+    .card-description__more:hover {
+      color: #888; }
+    .card-description__more:after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: .5rem;
+      background: url("../img/more-arrow.svg") no-repeat center;
+      width: 6rem;
+      height: 0.9rem; }
+  .card-descr-wrap {
+    display: none; }
   .table-size {
     padding-left: 0; }
   .table-size .step-list__item:before {

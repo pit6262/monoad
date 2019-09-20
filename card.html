@@ -13,7 +13,7 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
-<body class="loaded page-card">
+<body class="loaded page-card ">
 
 
 <!-- BEGIN BODY -->
@@ -181,26 +181,31 @@
 
 	<!-- BEGIN CONTENT -->
 	<main class="main" id="main">
-		<div class="container-fluid">
+		<div class="container-fluid ">
 			<!-- BEGIN CARD  -->
 			<div class="card-wrapper ">
 				<div class="card-wrapper__middle">
 					<div class="card-slider">
-						<div class="card-slider__item"><img src="img/products/120697.jpg" alt=""></div>
-						<div class="card-slider__item"><img src="img/products/860879.jpg" alt=""></div>
-						<div class="card-slider__item"><img src="img/products/820115.jpg" alt=""></div>
-						<div class="card-slider__item"><img src="img/products/350608.jpg" alt=""></div>
-						<div class="card-slider__item"><img src="img/products/317713.jpg" alt=""></div>
+						<div class="card-slider__item" data-id="csimg1"><a href="#img1" id="csimg1" class="gallery"><img src="img/products/120697.jpg" alt=""></a></div>
+						<div class="card-slider__item" data-id="csimg2"><a href="#img2" id="csimg2" class="gallery"><img src="img/products/860879.jpg" alt=""></a></div>
+						<div class="card-slider__item" data-id="csimg3"><a href="#img3" id="csimg3" class="gallery"><img src="img/products/820115.jpg" alt=""></a></div>
+						<div class="card-slider__item" data-id="csimg4"><a href="#img4" id="csimg4" class="gallery"><img src="img/products/350608.jpg" alt=""></a></div>
+						<div class="card-slider__item" data-id="csimg5"><a href="#img5" id="csimg5" class="gallery"><img src="img/products/317713.jpg" alt=""></a></div>
 					</div>
+					
 				</div>
 				<div class="card-wrapper__left">
 					<div class="card-sticky sticky">
 						<div class="card-description">
 
 							<h1 class="h3">Dr. Martens Classic Black</h1>
+							
+							<div class="card-descr-wrap">
+								<p>Кожа Smooth плотная, глянцевая. Культовая классика выпускается в неизменном фасоне с 1960 года в классических цветах: Черный и Темно вишневый. С каждым годом появляются новые лимитированные цвета. Носок закругленный. В моделях Smooth шнурки всегда в черном цвете. Прошивка желтого цвета в большинстве моделях за исключением некоторых. Не требует тщательного ухода. 
+								</p>
 
-							<p>Кожа Smooth плотная, глянцевая. Культовая классика выпускается в неизменном фасоне с 1960 года в классических цветах: Черный и Темно вишневый. С каждым годом появляются новые лимитированные цвета. Носок закругленный. В моделях Smooth шнурки всегда в черном цвете. Прошивка желтого цвета в большинстве моделях за исключением некоторых. Не требует тщательного ухода. 
-							</p>
+							</div>
+							<a href="#" class="card-description__more">Подробнее о товаре</a>
 						</div>
 					</div>
 				</div>
@@ -329,6 +334,24 @@
 		</div>
 	</main>
 	<!-- CONTENT EOF   -->
+
+	<div class="card-gallery ">
+		<div class="card-gallery__item" id="img1" data-id="csimg1">
+			<img src="img/products/120697.jpg" alt=""></a>
+		</div>
+		<div class="card-gallery__item" id="img2" data-id="csimg2">
+			<img src="img/products/860879.jpg" alt=""></a>
+		</div>
+		<div class="card-gallery__item" id="img3" data-id="csimg3">
+			<img src="img/products/820115.jpg" alt=""></a>
+		</div>
+		<div class="card-gallery__item" id="img4" data-id="csimg4">
+			<img src="img/products/350608.jpg" alt=""></a>
+		</div>
+		<div class="card-gallery__item" id="img5" data-id="csimg5">
+			<img src="img/products/317713.jpg" alt=""></a>
+		</div>
+	</div>
 	
 	<!-- BEGIN FOOTER -->
 	<footer class="footer footer--sticky" id="main-footer">
