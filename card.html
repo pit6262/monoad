@@ -63,10 +63,11 @@
 					<div class="col-md-4 col-8 order-md-0 order-1">
 						<ul class="header-controls">
 							<li class="header-controls__item">
-								<a data-fancybox data-src="#popup-location"  href="javascript:;" class="header-controls__link btn-location">рус</a>
+								<a data-fancybox data-src="#popup-location" href="javascript:;" class="header-controls__link btn-location">рус</a>
 							</li>
 							<li class="header-controls__item dropdown-hover">
-								<a href="#" class="header-controls__link btn-contact"><svg class="icon icon-comment"><use xlink:href="#icon-comment"></use></svg></a>
+								<a data-fancybox data-src="#popup-contacts" href="javascript:;" class="header-controls__link btn-contact"><svg class="icon icon-comment"><use xlink:href="#icon-comment"></use></svg></a>
+	
 								<div class="dropdown-block dropdown-block--contact">
 									<p><strong>Есть вопросы?</strong></p>
 									<p>Звоните: <a href="tel:380731005105" class="ct-link">+38(073)100-51-05</a></p>
@@ -85,7 +86,7 @@
 								</a>
 							</li>  
 							<li class="header-controls__item">
-								<a href="#" class="header-controls__link btn-profile"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg></a>
+								<a data-fancybox data-src="#popup-login" href="javascript:;" class="header-controls__link btn-profile"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg></a>
 							</li>    
 							<li class="header-controls__item dropdown-hover">
 								<a data-fancybox data-src="#popup-cart"  href="javascript:;" class="header-controls__link btn-cart">
@@ -556,6 +557,162 @@
 	</div>
 </div>
 
+<div style="display: none;" id="popup-contacts" class="popup  animated-modal">
+	<div class="h2 popup__title">Мы всегда на связи:</div>
+	<div class="contacts-wrap">
+		<div class="row">
+			<div class="col-md-6 ">
+				<div class="contacts-item">
+					<div class="h4">Отдел продаж:</div>
+					<p>Вопросы, касающиеся оформления заказа или консультации по подбору размера, модели и тп.</p>
+					<ul class="contacts-list">
+                        <li><a href="tel:380731005105"><svg class="icon icon-tel"><use xlink:href="#icon-tel"></use></svg>+38(073)1005-105</a></li>
+                        <li><a href="#"><svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg>Telegram</a></li>
+                        <li><a href="#"><svg class="icon icon-viber"><use xlink:href="#icon-viber"></use></svg>Viber</a></li>
+                        <li><a href="#"><svg class="icon icon-messenger"><use xlink:href="#icon-messenger"></use></svg>Messendger <span>(круглосуточно)</span></a></li>
+                        <li><a href="#"><svg class="icon icon-whatsapp"><use xlink:href="#icon-whatsapp"></use></svg>WatsApp</a></li>
+                        <li><a href="#"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg>VKontakte</a></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="col-md-6 ">
+				<div class="contacts-item">
+					<div class="h4">Отдел поддержки клиентов:</div>
+					<p>Вопросы, касающиеся исключительно активных заказов на нашем сайте.</p>
+					<ul class="contacts-list">
+                        <li><a href="#"><svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg>Telegram</a></li>
+                        <li><a href="#"><svg class="icon icon-viber"><use xlink:href="#icon-viber"></use></svg>Viber</a></li>
+                        <li><a href="#"><svg class="icon icon-whatsapp"><use xlink:href="#icon-whatsapp"></use></svg>WatsApp</a></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="col-md-6 ">
+				<div class="contacts-item">
+					<div class="h4">Административный отдел:</div>
+					<p>Вопросы, касающиеся сотрудничества просьба писать на почту:</p>
+					<ul class="contacts-list">
+                        <li><a href="mailto:monoadstore@gmail.com"><svg class="icon icon-message"><use xlink:href="#icon-message"></use></svg>monoadstore@gmail.com</a></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="col-md-6 ">
+				<div class="contacts-item">
+					<div class="h4">Предложения и жалобы:</div>
+					<p>Вопросы, касающиеся технических неполадок на сайте и жалобы требующие срочного внимания:</p>
+					<ul class="contacts-list">
+                        <li><a href="mailto:monoadstore@gmail.com"><svg class="icon icon-message"><use xlink:href="#icon-message"></use></svg>monoadstore@gmail.com</a></li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display: none;" id="popup-login" class="popup popup--sm animated-modal">
+	<div class="h2 popup__title">Авторизуйтесь или зарегистрируйтесь</div>
+
+	<div class="tab-wrap">
+		<ul class="nav-tab-list tabs">
+			<li class="nav-tab-list__item active">
+				<a href="#login_1" class="nav-tab-list__link">У меня есть кабинет</a>
+			</li>
+			<li class="nav-tab-list__item">
+				<a href="#login_2" class="nav-tab-list__link">Я новый пользователь</a>
+			</li>
+			<li class="nav-tab-list__item">
+				<a href="#login_3" class="nav-tab-list__link">Забыли пароль?</a>
+			</li>
+		</ul>
+
+		<div class="box-tab-cont">
+			<div class="tab-cont " id="login_1">
+				<form action="#">
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Email:</label>
+						</div>
+						<div class="col-md-9">
+							<input type="email" class="form-input">
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Пароль:</label>
+						</div>
+						<div class="col-md-9">
+							<input type="password" class="form-input">
+						</div>
+					</div>
+					<div class="text-center form-button">
+						<input type="submit" value="Авторизация" class="btn btn--dark">
+					</div>
+				</form>
+			</div>
+			<div class="tab-cont hide" id="login_2">
+				<form action="#">
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Email:</label>
+						</div>
+						<div class="col-md-9">
+							<input type="email" class="form-input">
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Пароль:</label>
+						</div>
+						<div class="col-md-9">
+							<input type="password" class="form-input">
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Повторите пароль:</label>
+						</div>
+						<div class="col-md-9 ">
+							<input type="password" class="form-input">
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Пол:</label>
+						</div>
+						<div class="col-md-9">
+							<select class="styler">
+								<option value="">Выберите пол ...</option>
+								<option value="">Женский</option>
+								<option value="">Мужской</option>
+							</select>
+						</div>
+					</div>
+					<div class="text-center form-button">
+						<input type="submit" value="Регистрация" class="btn btn--dark">
+					</div>
+				</form>
+			</div>
+			<div class="tab-cont hide" id="login_3">
+				
+				<form action="#" >
+					<p>Введите Email, который Вы использовали для регистрации. <br>Мы вышлем на него новый пароль.</p>
+					<div class="row form-group">
+						<div class="col-md-3">
+							<label class="form-group__label">Email:</label>
+						</div>
+						<div class="col-md-9">
+							<input type="email" class="form-input">
+						</div>
+					</div>
+					<div class="text-center form-button">
+						<input type="submit" value="Восстановить" class="btn btn--dark">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 <div style="display: none;" id="popup-table-size" class="popup animated-modal">
 	<div class="h2 popup__title">Как выбрать свой размер?</div>
 	<div class="table-size">
@@ -677,6 +834,26 @@
 <!-- BEGIN iCONS  -->
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
+	<symbol id="icon-message" viewBox="0 0 38 32">
+	<title>message</title>
+	<path d="M38.384 3.829v23.020c0 2.11-1.727 3.837-3.837 3.837h-30.694c-2.11 0-3.837-1.727-3.837-3.837v-23.020c0-2.11 1.727-3.837 3.837-3.837h30.694c2.11 0 3.837 1.727 3.837 3.837zM34.547 3.829l-15.347 9.592-15.347-9.592v3.837l15.347 9.592 15.347-9.592z"></path>
+	</symbol>
+	<symbol id="icon-whatsapp" viewBox="0 0 32 32">
+	<title>whatsapp</title>
+	<path d="M24.396 19.231c-0.098-0.163-0.359-0.261-0.75-0.457s-2.317-1.143-2.675-1.274c-0.359-0.131-0.62-0.196-0.881 0.196s-1.011 1.274-1.24 1.535c-0.228 0.261-0.457 0.294-0.848 0.098s-1.653-0.609-3.149-1.943c-1.164-1.038-1.95-2.32-2.178-2.712s-0.024-0.604 0.172-0.799c0.176-0.176 0.392-0.457 0.587-0.686s0.261-0.392 0.392-0.653 0.065-0.49-0.033-0.686c-0.098-0.196-0.881-2.123-1.207-2.908-0.318-0.763-0.64-0.66-0.881-0.672-0.228-0.011-0.489-0.014-0.751-0.014s-0.685 0.098-1.044 0.49-1.37 1.339-1.37 3.267c0 1.927 1.403 3.789 1.599 4.050s2.761 4.216 6.689 5.912c0.934 0.403 1.663 0.644 2.232 0.825 0.938 0.298 1.791 0.256 2.466 0.155 0.752-0.112 2.317-0.947 2.643-1.862s0.326-1.699 0.228-1.862zM4.461 27.724l1.316-4.806c-1.443-2.297-2.302-4.493-2.301-7.424 0.003-7.181 5.846-13.024 13.030-13.024 7.202 0.002 13.022 5.837 13.019 13.034-0.003 7.182-5.851 13.025-13.030 13.025-2.788-0.001-4.896-0.787-7.105-2.098zM9.006 29.268c2.289 1.248 4.872 1.906 7.495 1.907 8.636 0 15.667-7.030 15.67-15.67 0.002-4.187-1.627-8.124-4.585-11.086s-6.893-4.594-11.085-4.596c-8.637 0-15.667 7.029-15.67 15.669-0.001 2.762 0.72 5.458 2.092 7.834l-2.223 8.12z"></path>
+	</symbol>
+	<symbol id="icon-viber" viewBox="0 0 32 32">
+	<title>viber</title>
+	<path d="M17.205 18.358c-4.214-1.075-5.34-5.34-5.34-5.34s-0.051-0.577 0.334-0.887l0.761-0.605c0.378-0.291 0.618-0.997 0.234-1.687-0.654-1.16-1.585-2.392-2.081-2.904-0.377-0.447-0.93-0.55-1.514-0.246-0.003 0-0.009 0.003-0.012 0.003-0.552 0.313-1.069 0.731-1.551 1.26-0.003 0.006-0.006 0.006-0.009 0.011-0.494 0.592-0.784 1.276-0.546 2.010l0.020 0.014c0.647 2.291 2.981 6.566 6.266 9.157 2.008 1.602 5.158 3.208 6.471 3.579l0.014 0.020c0.731 0.237 1.415-0.050 2.010-0.546 0.006-0.003 0.006-0.006 0.011-0.009 0.529-0.482 0.947-0.999 1.259-1.551 0-0.003 0.003-0.009 0.003-0.012 0.304-0.584 0.201-1.138-0.246-1.515-0.809-0.755-1.99-1.565-2.903-2.081-0.69-0.384-1.396-0.144-1.687 0.234l-0.605 0.761c-0.31 0.384-0.887 0.334-0.887 0.334zM23.834 14.822c0.001 0 0.002 0 0.003 0 0.227-0.002 0.409-0.187 0.407-0.413-0.021-2.7-0.847-4.865-2.455-6.435-1.606-1.565-3.627-2.367-6.008-2.384-0.001 0-0.002 0-0.003 0-0.225 0-0.409 0.182-0.41 0.407s0.181 0.411 0.407 0.413c2.161 0.015 3.992 0.739 5.441 2.151 1.446 1.412 2.189 3.381 2.208 5.854 0.002 0.225 0.185 0.407 0.41 0.407zM21.68 13.98c0.222 0 0.405-0.178 0.41-0.401 0.036-1.601-0.448-2.961-1.439-4.042-0.985-1.078-2.371-1.689-4.119-1.817-0.226-0.016-0.422 0.153-0.439 0.379s0.153 0.422 0.379 0.439c1.554 0.114 2.723 0.622 3.574 1.553 0.855 0.933 1.256 2.068 1.224 3.47-0.005 0.226 0.174 0.414 0.401 0.419 0.003 0 0.006 0 0.009 0zM19.575 13.274c0.007 0 0.014 0 0.021-0 0.226-0.011 0.4-0.204 0.389-0.43-0.091-1.818-1.072-2.829-2.839-2.924-0.227-0.012-0.42 0.161-0.432 0.388s0.161 0.419 0.387 0.432c1.339 0.072 1.994 0.754 2.064 2.145 0.011 0.219 0.192 0.39 0.409 0.39zM22.259 25.252c-0.378 0.121-3.893 0.996-8.312 0.707 0 0-3.293 3.973-4.321 5.006-0.161 0.162-0.35 0.227-0.476 0.196-0.177-0.043-0.226-0.253-0.224-0.559 0.003-0.438 0.028-5.426 0.028-5.426-0.004-0.001-0.004-0.001-0.003-0.001-6.432-1.788-6.057-8.505-5.985-12.022s0.734-6.399 2.697-8.337c3.527-3.194 10.791-2.717 10.791-2.717 6.135 0.027 9.075 1.874 9.757 2.493 2.263 1.938 3.417 6.575 2.573 13.369-0.818 6.589-5.637 7.005-6.526 7.291zM8.952 25.175c0 0 0.001 0 0.001 0s-0.001-0-0.001-0zM16.589-0.19c0 0-8.553-0.516-12.723 3.309-2.321 2.321-3.137 5.716-3.223 9.929s-0.198 12.103 7.41 14.244c0.002 0.001 0.005 0.001 0.007 0.002l-0.005 3.265c0 0-0.048 1.322 0.822 1.592 1.053 0.327 1.671-0.678 2.676-1.761 0.552-0.594 1.313-1.468 1.888-2.136 5.203 0.436 9.205-0.563 9.659-0.711 1.051-0.342 6.995-1.102 7.962-8.994 0.997-8.136-0.484-13.281-3.159-15.602-0.806-0.741-4.062-3.105-11.315-3.137z"></path>
+	</symbol>
+	<symbol id="icon-tel" viewBox="0 0 32 32">
+	<title>tel</title>
+	<path d="M7.395 14.589c2.39 4.78 6.486 8.705 11.266 11.266l3.755-3.755c0.512-0.512 1.195-0.683 1.707-0.341 1.877 0.683 3.926 1.024 6.145 1.024 1.024 0 1.707 0.683 1.707 1.707v5.804c0 1.024-0.683 1.707-1.707 1.707-16.045 0-29.017-12.972-29.017-29.018 0-1.024 0.683-1.707 1.707-1.707h5.974c1.024 0 1.707 0.683 1.707 1.707 0 2.048 0.341 4.097 1.024 6.145 0.171 0.512 0 1.195-0.342 1.707z"></path>
+	</symbol>
+	<symbol id="icon-messenger" viewBox="0 0 32 32">
+	<title>messenger</title>
+	<path d="M32 14.815c0 8.182-7.163 14.815-16 14.815-1.595 0-3.135-0.217-4.589-0.619l-5.448 2.99v-5.649c-3.636-2.716-5.963-6.874-5.963-11.537 0-8.182 7.163-14.815 16-14.815s16 6.633 16 14.815zM26.335 10.667l-7.851 4.346-4.174-4.346-8.745 9.284 7.95-4.346 4.075 4.346z"></path>
+	</symbol>
 	<symbol id="icon-burger" viewBox="0 0 35 32">
 	<title>burger</title>
 	<path d="M2.4 1.050h29.2c1.325 0 2.4 1.074 2.4 2.4v0.65c0 1.325-1.075 2.4-2.4 2.4h-29.2c-1.325 0-2.4-1.075-2.4-2.4v-0.65c0-1.325 1.075-2.4 2.4-2.4zM2.4 25.5h29.2c1.325 0 2.4 1.074 2.4 2.4v0.65c0 1.326-1.075 2.4-2.4 2.4h-29.2c-1.325 0-2.4-1.075-2.4-2.4v-0.65c0-1.325 1.075-2.4 2.4-2.4zM2.4 13.3h29.2c1.325 0 2.4 1.075 2.4 2.4v0.6c0 1.326-1.075 2.4-2.4 2.4h-29.2c-1.325 0-2.4-1.074-2.4-2.4v-0.6c0-1.325 1.075-2.4 2.4-2.4z"></path>

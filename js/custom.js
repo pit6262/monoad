@@ -199,6 +199,9 @@ $(function(){
     			// "thumbs",
     			"close"
     		],
+    		afterShow: function( instance, slide ) {
+    			$('.styler').trigger('refresh');
+    		}
     		
     	});
     }
@@ -273,7 +276,16 @@ $(function(){
     }
     cardDescription();
 
-   
+    function showTrLine() {
+    	$('.show-tr').on('click', function(){
+	    	$(this).toggleClass('active').parents('.history-table__info').toggleClass('active').next().slideToggle(0)
+
+	    	return false;
+	    });
+
+	   
+    }
+    showTrLine();
 
 
     function openMenuMobile() {
