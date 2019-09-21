@@ -157,32 +157,7 @@ $(function(){
 		});
 	};
 
-	
 
-	if($('.card-slider').length){
-		$slick_slider = $('.card-slider');
-		settings = {
-			arrows: false,
-			dots: true,
-
-		}
-		$slick_slider.slick(settings);
-
-
-		$(window).on('load resize', function() {
-			if ($(this).height() > 700 && $(this).width() > 992) {
-			  if ($slick_slider.hasClass('slick-initialized')) {
-			    $slick_slider.slick('unslick');
-			  }
-			  return
-			}
-
-			if (!$slick_slider.hasClass('slick-initialized')) {
-			  return $slick_slider.slick(settings);
-			}
-		});
-	}
-    
     /* ---------------------------------------------- /*
 	 * Popup
 	/* ---------------------------------------------- */
@@ -226,7 +201,7 @@ $(function(){
     	return false;
     });
 
-     function gallery() {
+    function gallery() {
      	
     	$('.gallery').on('click', function(){
     		$('.main').hide();
@@ -245,11 +220,11 @@ $(function(){
     		
     			bl_topp = $('[data-id= '+ thisIDD +']').offset().top;
 			$('body,html').animate({scrollTop: bl_topp}, 0);
+			
+	   		 $('.recommendations-slider').slick('refresh');
 			return true;
 
 	    });
-
-	   
     }
     gallery();
     
@@ -261,8 +236,6 @@ $(function(){
 
 	    	return false;
 	    });
-
-	   
     }
     showMoreText();
 
@@ -344,10 +317,10 @@ $(function(){
 	});
 
 	function stickyCardInfo() {
-		$( window ).on('load resize', function() {
+		$(window).on('load resize', function() {
 
-		  window_width = $( window ).innerWidth();
-		  window_height = $( window ).innerHeight();
+		  window_width = $( window ).width();
+		  window_height = $( window ).height();
 
 		  if (window_width < 992 || window_height < 700) {
 		    $(".sticky").trigger("sticky_kit:detach");
@@ -367,7 +340,29 @@ $(function(){
 });
 
 
+if($('.card-slider').length){
+	$slick_slider = $('.card-slider');
+	settings = {
+		arrows: false,
+		dots: true,
 
+	}
+	$slick_slider.slick(settings);
+
+
+	$(window).on('load resize', function() {
+		if ($(this).height() > 700 && $(this).width() > 992) {
+		  if ($slick_slider.hasClass('slick-initialized')) {
+		    $slick_slider.slick('unslick');
+		  }
+		  return
+		}
+
+		if (!$slick_slider.hasClass('slick-initialized')) {
+		  return $slick_slider.slick(settings);
+		}
+	});
+}
 
 
 $(".header").removeClass("fixed");
@@ -406,53 +401,3 @@ var hf = function(){
 }
  
 $(window).on('load resize', hf);
-
-// Array.prototype.slice.call(document.querySelectorAll('.card-wrapper__left .card-sticky, .card-wrapper__right .card-sticky')).forEach(function(a) {  // селекторы блоков, которые будут фиксироваться. Может быть как один блок, так два и более
-// var b = null, P = 0;
-// if (document.documentElement.clientWidth > 1024) {
-// window.addEventListener('scroll', Ascroll, false);
-// document.body.addEventListener('scroll', Ascroll, false);
-// }
-
-// function Ascroll() {
-//   if (b == null) {
-//     var Sa = getComputedStyle(a, ''), s = '';
-//     for (var i = 0; i < Sa.length; i++) {
-//       if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-//         s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
-//       }
-//     }
-//     b = document.createElement('div');
-//     b.style.cssText = s + ' width: ' + a.offsetWidth + 'px;';
-//     a.insertBefore(b, a.firstChild);
-//     var l = a.childNodes.length;
-//     for (var i = 1; i < l; i++) {
-//       b.appendChild(a.childNodes[1]);
-//     }
-
-//     a.style.padding = '0';
-//     a.style.border = '0';
-//   }
-//   var Ra = a.getBoundingClientRect(),
-//       R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.card-wrapper__middle').getBoundingClientRect().bottom + 0);
-//   if ((Ra.top - P) <= 0) {
-//     if ((Ra.top - P) <= R) {
-//       b.className = 'stop';
-//       b.style.top = - R +'px';
-//       b.style.left = 0;
-//     } else {
-//       b.className = 'sticky';
-//       b.style.top = P + 'px';
-//       b.style.left = Ra.left + 'px';
-//     }
-//   } else {
-//     b.className = '';
-//     b.style.top = '';
-//     b.style.left = '';
-//   }
-//   window.addEventListener(' resize', function() {
-//     a.children[0].style.width = getComputedStyle(a, '').width;
-//     b.style.left = (b.className == 'sticky' ? (a.getBoundingClientRect().left + 'px') : '0');
-//   }, false);
-// }
-// })
