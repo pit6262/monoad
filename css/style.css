@@ -448,6 +448,7 @@ img {
   .btn-icon-left, a.btn-icon-left {
     margin-right: 1rem;
     font-size: 2rem;
+    top: .1rem;
     vertical-align: middle; }
     .btn-icon-left.icon-vk, a.btn-icon-left.icon-vk {
       font-size: 2.4rem; }
