@@ -137,6 +137,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- BEGIN SORT -->
 			<div class="header-sort">
 				<div class="row align-items-center ">
 					<div class="col-sm-5 col-7">
@@ -153,43 +154,44 @@
 					</div>
 				</div>
 			</div>
+			<!-- SORT EOF -->
 		</div>
 	</header>
 	
+	<!-- BEGIN NAVBAR FOR MOBILE -->
 	<nav class="navbar">
 		<div class="navbar__overlay"></div>
 		
 		<div class="navbar__container">
 			<a href="#" class="navbar__close"><svg class="icon icon-burger"><use xlink:href="#icon-burger"></use></svg></a>
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для женщин</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для мужчин</a>
-				</li>
 	
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">Для женщин</a></div>
+				<div class="h3"><a href="#">Для мужчин</a></div>
+			</div>
 	
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">МОЙ ПРОФИЛЬ</a>
-				</li>
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">МОЙ ПРОФИЛЬ</a></div>
+			</div>
 		</div>
 	</nav>
+	<!-- NAVBAR FOR MOBILE EOF -->
 	<!-- HEADER EOF   -->
 
-	<!-- BEGIN CONTENT -->
+	<!-- BEGIN MAIN -->
 	<main class="main" id="main">
 		<div class="container-fluid">
 			<div class="wrap">
+				<!-- BEGIN SIDEBAR -->
 				<aside class="sidebar">
-					<div class="sidebar__item">
+					<div class="sidebar-item">
 						<div class="h4"><a href="#">ОБУВЬ</a></div>
 						<div class="h4"><a href="#">АКСЕСУАРЫ</a></div>
 					</div>
 				</aside>
+				<!-- SIDEBAR EOF-->
+				
+				<!-- BEGIN CONTENT -->
 				<div class="content">
 					<div class="banner-slider">
 						<div>
@@ -221,7 +223,10 @@
 						</div>
 					</div>
 				</div>
+				<!-- CONTENT EOF -->
 			</div>
+
+			<!-- BEGIN SEASONAL DISCOUNTS -->
 			<section class="section">
 				<div class="section-header">
 					<h2>Сезонные скидки</h2>
@@ -312,6 +317,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- SEASONAL DISCOUNTS EOF -->
+
+			<!-- BEGIN ADVANTAGES -->
 			<section class="section section--default">
 				<div class="section-header">
 					<h2>Преимущества Monoad</h2>
@@ -348,9 +356,10 @@
 						<p>Мы не только продаем мартинсы а и носим их.</p>
 					</div>
 				</div>
-
 			</section>
+			<!-- ADVANTAGES EOF -->
 
+			<!-- BEGIN REVIEWS -->
 			<section class="section ">
 				<div class="section-header">
 					<h2>Отзывы о нашей работе</h2>
@@ -393,7 +402,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- REVIEWS EOF -->
 
+			<!-- BEGIN SOCIAL -->
 			<section class="section section--default">
 				<div class="section-header">
 					<h2>Следите за нами в социальных сетях</h2>
@@ -416,15 +427,15 @@
 						<a href="#" class="btn btn--dark"><svg class="icon icon-facebook btn-icon-left"><use xlink:href="#icon-facebook"></use></svg> Подписаться</a>
 					</div>
 				</div>
-
 			</section>
+			<!-- SOCIAL EOF -->
 
 		</div>
 	</main>
-	<!-- CONTENT EOF   -->
-	
+	<!-- MAIN EOF   -->
 	
 	<!-- BEGIN FOOTER -->
+	<!-- BEGIN FOOTER STICKY -->
 	<footer class="footer footer--sticky" id="main-footer">
 		<div class="container-fluid">
 			<div class="row align-items-center">
@@ -449,7 +460,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STICKY EOF -->
 	
+	<!-- BEGIN FOOTER STATIC -->
 	<footer class="footer" id="site-footer">
 		<div class="container-fluid">
 			<div class="footer-top hidden-md">
@@ -535,11 +548,11 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STATIC EOF -->
 	<!-- FOOTER EOF   -->
 
 </div>
 <!-- BODY EOF   -->
-
 
 <div class="icon-load">
 	<div class="ball a"></div>

@@ -15,7 +15,6 @@
 </head>
 <body class="loaded page-order">
 
-
 <!-- BEGIN BODY -->
 <div class="main-wrapper">
 
@@ -23,20 +22,24 @@
 <!-- 	//= template/header.html -->
 	<!-- HEADER EOF   -->
 
-	<!-- BEGIN CONTENT -->
+	<!-- BEGIN MAIN -->
 	<main class="main" id="main">
-		<div class="content">
-			<div class="container">
+		<div class="container">
+			<!-- BEGIN CONTENT -->
+			<div class="content">
 				<div class="content-header">
 					<h1 class="mb5">Оформление заказа</h1>
 					<h6>Описание оформления заказа ...</h6>
  				</div>
+ 				<!-- BEGIN STEP -->
 				<ol class="step-list mt50">
 					<li class="step-list__item">
 						<h3 class="step-list__title">Авторизуйтесь или зарегистрируйтесь</h3>
 
 						<div class="step-list__body">
+							<!-- BEGIN TABS -->
 							<div class="tab-wrap">
+								<!-- BEGIN TABS LIST -->
 								<ul class="nav-tab-list tabs">
 									<li class="nav-tab-list__item active">
 										<a href="#tab_1" class="nav-tab-list__link">Я новый пользователь</a>
@@ -45,7 +48,9 @@
 										<a href="#tab_2" class="nav-tab-list__link">У меня есть кабинет</a>
 									</li>
 								</ul>
-
+								<!-- TABS LIST EOF -->
+								
+								<!-- BEGIN TABS CONTENT -->
 								<div class="box-tab-cont">
 									<div class="tab-cont" id="tab_1">
 										<form action="#" class="order-form">
@@ -106,7 +111,9 @@
 										</form>
 									</div>
 								</div>
+								<!-- TABS CONTENT EOF -->
 							</div>
+							<!-- TABS EOF -->
 						</div>
 					</li>
 					<li class="step-list__item">
@@ -282,7 +289,9 @@
 						<h3 class="step-list__title">Авторизуйтесь или зарегистрируйтесь</h3>
 
 						<div class="step-list__body">
+							<!-- BEGIN TABS -->
 							<div class="tab-wrap">
+								<!-- BEGIN TABS LIST -->
 								<ul class="nav-tab-list tabs">
 									<li class="nav-tab-list__item active">
 										<a href="#tab_11" class="nav-tab-list__link">Через Новую почту</a>
@@ -291,6 +300,9 @@
 										<a href="#tab_12" class="nav-tab-list__link">Курьером</a>
 									</li>
 								</ul>
+								<!-- TABS LIST EOF -->
+								
+								<!-- BEGIN TABS CONTENT -->
 								<div class="box-tab-cont">
 									<div class="tab-cont" id="tab_11">
 										<form action="#" class="order-form">
@@ -394,19 +406,21 @@
 										</form>
 									</div>
 								</div>
+								<!-- TABS CONTENT EOF -->
 							</div>
+							<!-- TABS EOF -->
 						</div>
 					</li>
 				</ol>
-
+				<!-- STEP EOF -->
 			</div>
+			<!-- CONTENT EOF -->
 		</div>
 	</main>
-	<!-- CONTENT EOF   -->
+	<!-- MAIN EOF   -->
 	
-	
-
 	<!-- BEGIN FOOTER -->
+	<!-- BEGIN FOOTER STICKY -->
 	<footer class="footer footer--sticky" id="main-footer">
 		<div class="container-fluid">
 			<div class="row align-items-center">
@@ -431,7 +445,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STICKY EOF -->
 	
+	<!-- BEGIN FOOTER STATIC -->
 	<footer class="footer" id="site-footer">
 		<div class="container-fluid">
 			<div class="footer-top hidden-md">
@@ -517,11 +533,11 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STATIC EOF -->
 	<!-- FOOTER EOF   -->
 
 </div>
 <!-- BODY EOF   -->
-
 
 <div class="icon-load">
 	<div class="ball a"></div>

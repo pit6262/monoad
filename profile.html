@@ -137,6 +137,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- BEGIN SORT -->
 			<div class="header-sort">
 				<div class="row align-items-center ">
 					<div class="col-sm-5 col-7">
@@ -153,43 +154,41 @@
 					</div>
 				</div>
 			</div>
+			<!-- SORT EOF -->
 		</div>
 	</header>
 	
+	<!-- BEGIN NAVBAR FOR MOBILE -->
 	<nav class="navbar">
 		<div class="navbar__overlay"></div>
 		
 		<div class="navbar__container">
 			<a href="#" class="navbar__close"><svg class="icon icon-burger"><use xlink:href="#icon-burger"></use></svg></a>
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для женщин</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для мужчин</a>
-				</li>
 	
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">Для женщин</a></div>
+				<div class="h3"><a href="#">Для мужчин</a></div>
+			</div>
 	
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">МОЙ ПРОФИЛЬ</a>
-				</li>
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">МОЙ ПРОФИЛЬ</a></div>
+			</div>
 		</div>
 	</nav>
+	<!-- NAVBAR FOR MOBILE EOF -->
 	<!-- HEADER EOF   -->
 
-	<!-- BEGIN CONTENT -->
+	<!-- BEGIN MAIN -->
 	<main class="main" id="main">
 		<div class="container-fluid">
 			<div class="wrap">
+				<!-- BEGIN SIDEBAR -->
 				<aside class="sidebar">
 					<div class="back-page">
 						<a href="#" class="back-page__btn"><svg class="icon icon-back"><use xlink:href="#icon-back"></use></svg></a>
 					</div>
 
-					<div class="sidebar__item">
+					<div class="sidebar-item">
 						<div class="h4">Ваш кабинет</div>
 						<ul class="sidebar-menu">
 							<li class="sidebar-menu__item">
@@ -209,15 +208,19 @@
 							</li>
 						</ul>
 					</div>
-					
 				</aside>
+				<!-- SIDEBAR EOF -->
+
+				<!-- BEGIN CONTENT -->
 				<div class="content">
+					<!-- BEGIN CONTENT WRAP -->
 					<div class="content-wrap">
 						<div class="content-header">
 							<h1>Личные данные</h1>
 							<p>Страница находится в разработке ...</p>
 							<p><label class="check-button"><input type="checkbox" ><span class="check-button__slider"></span>  Включить или выключить рассылку</label> </p>
 						</div>
+						<!-- BEGIN ORDER FORM -->
 						<form action="#" class="order-form ">
 							<div class="row form-group">
 								<div class="col-md-3">
@@ -225,7 +228,6 @@
 								</div>
 								<div class="col-xl-3 col-md-4 col-sm-4">
 									<div class="social mt5 mb10">
-										
 										<a href="#" class="social__link"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
 										<a href="#" class="social__link"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg></a>
 										<a href="#" class="social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
@@ -335,14 +337,18 @@
 							
 							<div class="text-right form-button"><input type="submit" class="btn btn--dark" value="Сохранить"></div>
 						</form>
+						<!-- ORDER FORM EOF -->
 					</div>
+					<!-- CONTENT WRAP EOF -->
 				</div>
+				<!-- CONTENT EOF -->
 			</div>
 		</div>
 	</main>
-	<!-- CONTENT EOF   -->
+	<!-- MAIN EOF   -->
 
 	<!-- BEGIN FOOTER -->
+	<!-- BEGIN FOOTER STICKY -->
 	<footer class="footer footer--sticky" id="main-footer">
 		<div class="container-fluid">
 			<div class="row align-items-center">
@@ -367,7 +373,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STICKY EOF -->
 	
+	<!-- BEGIN FOOTER STATIC -->
 	<footer class="footer" id="site-footer">
 		<div class="container-fluid">
 			<div class="footer-top hidden-md">
@@ -453,11 +461,11 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STATIC EOF -->
 	<!-- FOOTER EOF   -->
 
 </div>
 <!-- BODY EOF   -->
-
 
 <div class="icon-load">
 	<div class="ball a"></div>

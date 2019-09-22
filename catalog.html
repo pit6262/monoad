@@ -137,6 +137,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- BEGIN SORT -->
 			<div class="header-sort">
 				<div class="row align-items-center ">
 					<div class="col-sm-5 col-7">
@@ -153,43 +154,41 @@
 					</div>
 				</div>
 			</div>
+			<!-- SORT EOF -->
 		</div>
 	</header>
 	
+	<!-- BEGIN NAVBAR FOR MOBILE -->
 	<nav class="navbar">
 		<div class="navbar__overlay"></div>
 		
 		<div class="navbar__container">
 			<a href="#" class="navbar__close"><svg class="icon icon-burger"><use xlink:href="#icon-burger"></use></svg></a>
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для женщин</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для мужчин</a>
-				</li>
 	
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">Для женщин</a></div>
+				<div class="h3"><a href="#">Для мужчин</a></div>
+			</div>
 	
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">МОЙ ПРОФИЛЬ</a>
-				</li>
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">МОЙ ПРОФИЛЬ</a></div>
+			</div>
 		</div>
 	</nav>
+	<!-- NAVBAR FOR MOBILE EOF -->
 	<!-- HEADER EOF   -->
 
-	<!-- BEGIN CONTENT -->
+	<!-- BEGIN MAIN -->
 	<main class="main" id="main">
 		<div class="container-fluid">
 			<div class="wrap">
+				<!-- BEGIN SIDEBAR -->
 				<aside class="sidebar">
 					<div class="back-page">
 						<a href="#" class="back-page__btn"><svg class="icon icon-back"><use xlink:href="#icon-back"></use></svg></a>
 					</div>
 
-					<div class="sidebar__item">
+					<div class="sidebar-item">
 						<div class="h4">Категории</div>
 						<ul class="sidebar-menu">
 							<li class="sidebar-menu__item">
@@ -210,7 +209,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="sidebar__item">
+					<div class="sidebar-item">
 						<div class="h4">Бренды</div>
 						<ul class="sidebar-menu">
 							<li class="sidebar-menu__item">
@@ -224,7 +223,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="sidebar__item">
+					<div class="sidebar-item">
 						<div class="h4">Сортировать</div>
 						<ul class="sidebar-menu">
 							<li class="sidebar-menu__item">
@@ -249,9 +248,14 @@
 						</ul>
 					</div>
 				</aside>
+				<!-- SIDEBAR EOF -->
+
+				<!-- BEGIN CONTENT -->
 				<div class="content">
 					<div class="content-header">
 						<h1>Ботинки</h1>
+
+						<!-- BEGIN SHORT TEXT -->
 						<div class="toggle-block">
 							<div class="short-block">
 								<p>Dr Martens это - известный мировой бренд. Первую пару обуви с воздушной подушкой под пятой в 1960 г. придумал немецкий врач - Доктор Мартенс. </p>
@@ -263,9 +267,10 @@
 								<p>Очень быстро данная обувь стала популярной среди представителей музыкальных субкультур.Dr Martens любят Селена Гомез и Гвен Стефани. </p>
 							</div>
 						</div>
+						<!-- SHORT TEXT EOF -->
 					</div>
 					
-
+					<!-- BEGIN PRODUCTS -->
 					<div class="row products">
 						<div class="col-6 col-lg-4 col-xl-3">
 							<div class="product-card">
@@ -504,9 +509,10 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
+					<!-- PRODUCTS EOF -->
 
+					<!-- BEGIN PAGINATION -->
 					<div class="box-paging" style="display: none;">
 						<ul class="paging-list">
 							<li class="paging-list__item paging-prev" style="display: none;">
@@ -538,7 +544,9 @@
 							</li>
 						</ul>
 					</div>
-
+					<!-- PAGINATION EOF -->
+					
+					<!-- BEGIN PAGINATION 2 -->
 					<div class="box-paging row">
 						<div class="col-xl-3 col-lg-4 col-sm-5 col-7">
 							<select class="styler styler--default">
@@ -560,39 +568,46 @@
 							</ul>
 						</div>
 					</div>
+					<!-- PAGINATION 2 EOF -->
 				</div>
+				<!-- CONTENT EOF -->
 			</div>
 		</div>
 	</main>
-	<!-- CONTENT EOF   -->
+	<!-- MAIN EOF   -->
 	
+	<!-- BEGIN CATEGORY FOR MOBILE -->
 	<div class="category ">
 		<div class="category__overlay"></div>
 		<div class="category__container">
 			<a href="#" class="category__close"><svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg></a>
-			<div class="h4">Категории</div>
-			<ul class="sidebar-menu">
-				<li class="sidebar-menu__item">
-					<a href="#" class="sidebar-menu__link active">Обувь</a>
-					<ul>
-						<li><a href="#">Зимняя обувь</a></li>
-						<li><a href="#" class="active">Ботинки</a></li>
-						<li><a href="#">Туфли</a></li>
-						<li><a href="#">Легкая обувь</a></li>
-						<li><a href="#">Сандали</a></li>
-					</ul>
-				</li>
-				<li class="sidebar-menu__item">
-					<a href="#" class="sidebar-menu__link">Сумки</a>
-				</li>
-				<li class="sidebar-menu__item">
-					<a href="#" class="sidebar-menu__link">Аксесуары</a>
-				</li>
-			</ul>
+			<div class="sidebar-item">
+				<div class="h4">Категории</div>
+				<ul class="sidebar-menu">
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link active">Обувь</a>
+						<ul>
+							<li><a href="#">Зимняя обувь</a></li>
+							<li><a href="#" class="active">Ботинки</a></li>
+							<li><a href="#">Туфли</a></li>
+							<li><a href="#">Легкая обувь</a></li>
+							<li><a href="#">Сандали</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">Сумки</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">Аксесуары</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
+	<!-- CATEGORY FOR MOBILE EOF -->
 
 	<!-- BEGIN FOOTER -->
+	<!-- BEGIN FOOTER STICKY -->
 	<footer class="footer footer--sticky" id="main-footer">
 		<div class="container-fluid">
 			<div class="row align-items-center">
@@ -617,7 +632,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STICKY EOF -->
 	
+	<!-- BEGIN FOOTER STATIC -->
 	<footer class="footer" id="site-footer">
 		<div class="container-fluid">
 			<div class="footer-top hidden-md">
@@ -703,11 +720,11 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STATIC EOF -->
 	<!-- FOOTER EOF   -->
 
 </div>
 <!-- BODY EOF   -->
-
 
 <div class="icon-load">
 	<div class="ball a"></div>

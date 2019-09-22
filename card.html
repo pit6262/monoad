@@ -137,6 +137,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- BEGIN SORT -->
 			<div class="header-sort">
 				<div class="row align-items-center ">
 					<div class="col-sm-5 col-7">
@@ -153,39 +154,37 @@
 					</div>
 				</div>
 			</div>
+			<!-- SORT EOF -->
 		</div>
 	</header>
 	
+	<!-- BEGIN NAVBAR FOR MOBILE -->
 	<nav class="navbar">
 		<div class="navbar__overlay"></div>
 		
 		<div class="navbar__container">
 			<a href="#" class="navbar__close"><svg class="icon icon-burger"><use xlink:href="#icon-burger"></use></svg></a>
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для женщин</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Для мужчин</a>
-				</li>
 	
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">Для женщин</a></div>
+				<div class="h3"><a href="#">Для мужчин</a></div>
+			</div>
 	
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">МОЙ ПРОФИЛЬ</a>
-				</li>
-			</ul>
+			<div class="sidebar-item">
+				<div class="h3"><a href="#">МОЙ ПРОФИЛЬ</a></div>
+			</div>
 		</div>
 	</nav>
+	<!-- NAVBAR FOR MOBILE EOF -->
 	<!-- HEADER EOF -->
 
-	<!-- BEGIN CONTENT -->
+	<!-- BEGIN MAIN -->
 	<main class="main" id="main">
 		<div class="container-fluid ">
 			<!-- BEGIN CARD  -->
 			<div class="card-wrapper ">
 				<div class="card-wrapper__middle">
+					<!-- BEGIN CARD SLIDER -->
 					<div class="card-slider">
 						<div class="card-slider__item" data-id="csimg1"><a href="#img1" id="csimg1" class="gallery"><img src="img/products/120697.jpg" alt=""></a></div>
 						<div class="card-slider__item" data-id="csimg2"><a href="#img2" id="csimg2" class="gallery"><img src="img/products/860879.jpg" alt=""></a></div>
@@ -193,10 +192,11 @@
 						<div class="card-slider__item" data-id="csimg4"><a href="#img4" id="csimg4" class="gallery"><img src="img/products/350608.jpg" alt=""></a></div>
 						<div class="card-slider__item" data-id="csimg5"><a href="#img5" id="csimg5" class="gallery"><img src="img/products/317713.jpg" alt=""></a></div>
 					</div>
-					
+					<!-- CARD SLIDER EOF -->
 				</div>
 				<div class="card-wrapper__left">
 					<div class="card-sticky sticky">
+						<!-- BEGIN CARD DESCRIPTION -->
 						<div class="card-description">
 
 							<h1 class="h3">Dr. Martens Classic Black</h1>
@@ -208,10 +208,12 @@
 							</div>
 							<a href="#" class="card-description__more">Подробнее о товаре</a>
 						</div>
+						<!-- CARD DESCRIPTION EOF -->
 					</div>
 				</div>
 				<div class="card-wrapper__right">
 					<div class="card-sticky sticky">
+						<!-- BEGIN CARD DETAILS -->
 						<div class="card-info">
 							<div class="product-tags mb5">
 								<div class="product-tags__price-old">19 000 Р</div>
@@ -237,12 +239,13 @@
 								<li><a href="#"><svg class="icon icon-share"><use xlink:href="#icon-share"></use></svg>Рассказать друзьям</a></li>
 							</ul>
 						</div>
+						<!-- CARD DETAILS EOF -->
 					</div>
 				</div>
 			</div>
 			<!-- CARD EOF -->
 
-			<!-- BEGIN recommendations -->
+			<!-- BEGIN RECOMMENDATIONS -->
 			<div class="recommendations-container">
 				<div class="recommendations-slider">
 					<div>
@@ -331,11 +334,12 @@
 					</div>
 				</div>
 			</div>
-			<!-- recommendations EOF -->
+			<!-- RECOMMENDATIONS EOF -->
 		</div>
 	</main>
-	<!-- CONTENT EOF   -->
+	<!-- MAIN EOF   -->
 
+	<!-- BEGIN CARD GALLERY POPUP -->
 	<div class="card-gallery ">
 		<div class="card-gallery__item" id="img1" data-id="csimg1">
 			<img src="img/products/120697.jpg" alt=""></a>
@@ -353,8 +357,10 @@
 			<img src="img/products/317713.jpg" alt=""></a>
 		</div>
 	</div>
+	<!-- CARD GALLERY POPUP EOF -->
 	
 	<!-- BEGIN FOOTER -->
+	<!-- BEGIN FOOTER STICKY -->
 	<footer class="footer footer--sticky" id="main-footer">
 		<div class="container-fluid">
 			<div class="row align-items-center">
@@ -379,7 +385,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STICKY EOF -->
 	
+	<!-- BEGIN FOOTER STATIC -->
 	<footer class="footer" id="site-footer">
 		<div class="container-fluid">
 			<div class="footer-top hidden-md">
@@ -465,11 +473,11 @@
 			</div>
 		</div>
 	</footer>
+	<!-- FOOTER STATIC EOF -->
 	<!-- FOOTER EOF   -->
 
 </div>
 <!-- BODY EOF   -->
-
 
 <div class="icon-load">
 	<div class="ball a"></div>
