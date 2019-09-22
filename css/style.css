@@ -412,23 +412,12 @@ img {
      @mixin ===================== */
 .btn, a.btn {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: inline-block;
   vertical-align: middle;
   height: 3.8rem;
-  padding: .1rem 2.5rem 0;
+  padding: 0 2.5rem;
   color: #131313;
-  font: 700 1.8rem 'Bebas Neue', Arial, sans-serif;
+  font: 700 1.8rem/3.6rem 'Bebas Neue', Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   border: .1rem solid;
@@ -458,7 +447,8 @@ img {
       color: #fff; }
   .btn-icon-left, a.btn-icon-left {
     margin-right: 1rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    vertical-align: middle; }
     .btn-icon-left.icon-vk, a.btn-icon-left.icon-vk {
       font-size: 2.4rem; }
 
