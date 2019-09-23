@@ -247,12 +247,19 @@ $(function(){
     showMoreText();
 
     function cardDescription() {
-    	$('.card-description__more').on('click', function(){
-	    	$(this).hide()
-	    	$(this).parents('.card-description').find('.card-descr-wrap').show()
 
-	    	return false;
-	    }); 
+
+	    $('.card-description__more').click(function(event) {
+	        event.preventDefault();
+	        $(this).toggleClass('active').parents('.card-description').find('.card-descr-wrap').slideToggle(400);
+	        namebl = $(this).html();
+	        if(namebl == 'Подробнее о товаре'){
+	            $(this).html('Cвернуть');
+	        }else{
+	           $(this).html('Подробнее о товаре');
+	        }
+
+	    });
     }
     cardDescription();
 

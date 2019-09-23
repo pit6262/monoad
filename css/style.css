@@ -1151,6 +1151,9 @@ label {
     flex: 1;
     min-width: 1px; }
 
+.banner-slider img {
+  width: 100%; }
+
 .banner-slider .slick-dots {
   position: absolute;
   left: 0;
@@ -2265,6 +2268,10 @@ label {
       background: url("../img/more-arrow.svg") no-repeat center;
       width: 6rem;
       height: 0.9rem; }
+    .card-description__more.active:after {
+      -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
   .card-descr-wrap {
     display: none; }
   .table-size {
