@@ -1855,7 +1855,13 @@ label {
     line-height: 1.4;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-bottom: .5rem; }
+    margin-bottom: .5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
   .product-card__buttons {
     margin-top: .7rem; }
     .product-card__buttons .btn {
@@ -1865,7 +1871,11 @@ label {
       padding-right: 1.8rem; }
   .product-card p {
     line-height: 1.4;
-    margin: .4rem 0; }
+    margin: .4rem 0;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .product-card .product-tags {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
