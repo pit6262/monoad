@@ -236,6 +236,13 @@ $(function(){
 
 	    	return false;
 	    });
+
+	    $('.show-more-return').on('click', function(){
+	    	$(this).parents('.full-block').hide()
+	    	$(this).parents('.toggle-block').find('.short-block').show()
+
+	    	return false;
+	    });
     }
     showMoreText();
 

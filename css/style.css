@@ -283,10 +283,6 @@ img {
   display: block;
   max-width: 100%; }
 
-.show-more {
-  font-weight: 400;
-  border-bottom: .1rem solid; }
-
 /* loader */
 .loaded .main-wrapper {
   visibility: hidden;
@@ -1881,11 +1877,6 @@ label {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  .product-card .product-tags {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
   .product-card .btn-favorites {
     font-size: 0; }
     .product-card .btn-favorites .icon {
@@ -1904,7 +1895,7 @@ label {
   margin-right: -.4rem; }
   .product-tags .badge-new {
     position: relative;
-    top: -.1rem;
+    top: -.2rem;
     margin: 0 .2rem;
     display: inline-block;
     vertical-align: middle; }
