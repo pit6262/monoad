@@ -1177,6 +1177,9 @@ label {
     margin-bottom: 3rem; }
     .section-header h2, .section-header .h2 {
       margin-bottom: .5rem; }
+  .section--seo {
+    padding-left: 4%;
+    padding-right: 4%; }
 
 /* SIDEBAR ============== */
 .back-page {
@@ -2384,6 +2387,9 @@ label {
   .main {
     padding-top: 11rem;
     padding-bottom: 3rem; }
+  .section--seo {
+    padding-left: 0;
+    padding-right: 0; }
   .wrap {
     display: block; }
     .wrap .sidebar {
