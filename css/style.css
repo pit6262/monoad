@@ -896,6 +896,8 @@ label {
       background: #131313;
       -webkit-transition: inherit;
       transition: inherit; }
+  .header-top__controls {
+    padding: 0 !important; }
   .header-controls {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -904,10 +906,6 @@ label {
     .header-controls__item {
       padding: 0 1.1rem;
       position: relative; }
-      .header-controls__item:last-child {
-        padding-right: 0; }
-      .header-controls__item:first-child {
-        padding-left: 0; }
     .header-controls__link {
       font-size: 1.3rem;
       text-transform: uppercase;
@@ -976,7 +974,7 @@ label {
   z-index: -1;
   top: 100%;
   margin-top: 1.5rem;
-  right: .5rem;
+  right: 50%;
   background: #fff;
   border-radius: 1.5rem 0 1.5rem 1.5rem;
   box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.08);
@@ -2146,7 +2144,7 @@ label {
   .dropdown-block--lg-left {
     border-radius: 0 1.5rem 1.5rem 1.5rem;
     right: auto;
-    left: .5rem; }
+    left: 50%; }
     .dropdown-block--lg-left:after {
       left: 0;
       right: auto;
@@ -2183,7 +2181,7 @@ label {
   .dropdown-block--md-left {
     border-radius: 0 1.5rem 1.5rem 1.5rem;
     right: auto;
-    left: .5rem; }
+    left: 50%; }
     .dropdown-block--md-left:after {
       left: 0;
       right: auto;
