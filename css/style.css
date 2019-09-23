@@ -2345,6 +2345,13 @@ label {
       position: relative; }
       .header-controls__item {
         position: static; }
+    .header-top__controls {
+      -webkit-box-flex: 0 !important;
+      -webkit-flex: none !important;
+      -ms-flex: none !important;
+      flex: none !important;
+      max-width: none !important;
+      width: auto !important; }
   .dropdown-block--md-left {
     left: 0;
     border-radius: 1.5rem; }
