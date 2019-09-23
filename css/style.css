@@ -1865,10 +1865,14 @@ label {
   .product-card__buttons {
     margin-top: .7rem; }
     .product-card__buttons .btn {
-      margin: .5rem;
+      margin: .5rem .3rem;
       min-width: 10.1rem;
       padding-left: 1.8rem;
       padding-right: 1.8rem; }
+    .product-card__buttons.w-same .btn {
+      width: 10.1rem;
+      padding-left: 1rem;
+      padding-right: 1rem; }
   .product-card p {
     line-height: 1.4;
     margin: .4rem 0;
