@@ -698,7 +698,8 @@ label {
   border-radius: 1.9rem;
   overflow: hidden;
   margin-top: .2rem;
-  background: #fff; }
+  background: #fff;
+  text-align: left; }
   .jq-selectbox__dropdown li {
     padding: .5rem 2rem;
     color: #131313;
