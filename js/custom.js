@@ -157,6 +157,25 @@ $(function(){
 		});
 	};
 
+	if($('.learn-slider').length){
+        $('.learn-slider').slick({
+        	appendArrows: '.learn-block__head',
+        	prevArrow: '<button class="slick-prev slick-arrow"><svg class="icon icon-back"><use xlink:href="#icon-back"></use></svg></button>',
+        	nextArrow: '<button class="slick-next slick-arrow"><svg class="icon icon-back"><use xlink:href="#icon-back"></use></svg></button>',
+        	adaptiveHeight: true,
+        	 responsive: [
+		    	{
+		    		breakpoint: 992,
+		    		settings: {
+		    			arrows: false,
+		    			dots: true,
+		    			
+		    		}
+		    	},
+		    ]
+        });
+    };
+
 
     /* ---------------------------------------------- /*
 	 * Popup
@@ -228,19 +247,35 @@ $(function(){
     }
     gallery();
     
-
+    
     function showMoreText() {
-    	$('.show-more').on('click', function(){
-	    	$(this).parents('.short-block').hide()
-	    	$(this).parents('.toggle-block').find('.full-block').show()
-
+    	var htTu = $('.toggle-block').height();
+	    if(htTu < 109) {
+	    	$('.toggle-block').addClass('open')
+	    	$('.toggle-block-overlay').hide()
+	    	$('.toggle-block-btn').hide()
+	    }
+    	$('.toggle-block-btn').on('click', function(){
+	    	$(this).prev('.toggle-block').toggleClass('open');
+	    	$(this).next().slideToggle(400);
+	        namebl = $(this).html();
+	        if(namebl == 'Подробнее'){
+	            $(this).html('Cвернуть');
+	        }else{
+	           $(this).html('Подробнее');
+	        }
 	    	return false;
 	    });
 
-	    $('.show-more-return').on('click', function(){
-	    	$(this).parents('.full-block').hide()
-	    	$(this).parents('.toggle-block').find('.short-block').show()
-
+	    $('.toggle-block-overlay').on('click', function(){
+	    	$(this).parent('.toggle-block').toggleClass('open');
+	    	namebl = $(this).parent().next().html();
+	        if(namebl == 'Подробнее'){
+	            $(this).parent().next().html('Cвернуть');
+	        }else{
+	           $(this).parent().next().html('Подробнее');
+	        }
+	    	
 	    	return false;
 	    });
     }
@@ -269,8 +304,6 @@ $(function(){
 
 	    	return false;
 	    });
-
-	   
     }
     showTrLine();
 
@@ -290,7 +323,7 @@ $(function(){
     }
     openMenuMobile();
 
-     function openCategoryMobile() {
+    function openCategoryMobile() {
     	$('.btn-toggle-category').on('click', function(){
 	    	$('.category').addClass('open');
 
@@ -303,7 +336,6 @@ $(function(){
 	    	return false;
 	    });
     }
-
     openCategoryMobile();
 
 
@@ -315,9 +347,6 @@ $(function(){
       event.stopPropagation();
     });
   
-
-
-
 	/* ---------------------------------------------- /*
 	 * Tabs
 	/* ---------------------------------------------- */
@@ -348,7 +377,6 @@ $(function(){
 		  $(".sticky").stick_in_parent();
 		}
 	}
-
 	stickyCardInfo();
 
 });
@@ -378,7 +406,6 @@ if($('.card-slider').length){
 	});
 }
 
-
 $(".header").removeClass("fixed");
 $(window).on('scroll load', function(){
 
@@ -389,8 +416,6 @@ $(window).on('scroll load', function(){
 		 $(".header").removeClass("fixed");
 		 // $(".page-catalog .header-top").slideDown(200);
 	};
-
-	
 });
 
 $(window).on('load scroll', function() { 
@@ -401,7 +426,6 @@ $(window).on('load scroll', function() {
       $('#main-footer').addClass('open');
     }
 }); 
-
 
 
 //fixed header and footer	
