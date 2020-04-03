@@ -305,6 +305,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 50;
   display: none;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -331,11 +332,11 @@ img {
 .b {
   margin-right: 1rem;
   -webkit-animation: ball-b 0.7s ease-out 0.2s infinite alternate;
-  animation: ball-b 0.7s ease-out 0.2s infinite alternate; }
+  animation: ball-b 0.7s ease-out 0.2s infinite alternate;
+  margin-right: 0; }
 
 .c {
-  -webkit-animation: ball-c 0.7s ease-out 0.4s infinite alternate;
-  animation: ball-c 0.7s ease-out 0.4s infinite alternate; }
+  display: none; }
 
 /*ANIMATION STORAGE*/
 @-webkit-keyframes ball-a {
@@ -346,7 +347,7 @@ img {
   to {
     height: 7rem;
     opacity: 1;
-    background: green; } }
+    background: #fbc644; } }
 @keyframes ball-a {
   from {
     height: 2rem;
@@ -355,7 +356,7 @@ img {
   to {
     height: 7rem;
     opacity: 1;
-    background: green; } }
+    background: #fbc644; } }
 
 @-webkit-keyframes ball-b {
   from {
@@ -365,7 +366,7 @@ img {
   to {
     height: 6.5rem;
     opacity: 1;
-    background: yellow; } }
+    background: #131313; } }
 
 @keyframes ball-b {
   from {
@@ -375,27 +376,7 @@ img {
   to {
     height: 6.5rem;
     opacity: 1;
-    background: yellow; } }
-
-@-webkit-keyframes ball-c {
-  from {
-    height: 2rem;
-    opacity: 0.3;
-    background: white; }
-  to {
-    height: 6rem;
-    opacity: 1;
-    background: red; } }
-
-@keyframes ball-c {
-  from {
-    height: 2rem;
-    opacity: 0.3;
-    background: white; }
-  to {
-    height: 6rem;
-    opacity: 1;
-    background: red; } }
+    background: #131313; } }
 
 /* 3.1. Icons
      @mixin ===================== */
@@ -2038,7 +2019,8 @@ label {
   background-image: url("../img/banner-1.jpg"); }
 
 .banner-img-2 {
-  background-image: url("../img/banner-2.jpg"); }
+  background-image: url("../img/banner-2.jpg");
+  background-position: 35% center; }
 
 .banner-img-3 {
   background-image: url("../img/banner-3.jpg"); }
@@ -2046,7 +2028,7 @@ label {
 .collection {
   line-height: 1.9;
   font-size: 1.8rem;
-  margin-bottom: 10rem; }
+  margin-bottom: 7.5rem; }
   .collection h1, .collection h2 {
     font-size: 5.5rem; }
   .collection p {
@@ -2059,7 +2041,8 @@ label {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin-bottom: -3rem; }
     .collection-wrap__content, .collection-wrap__img {
       margin-bottom: 3rem; }
     .collection-wrap__img {
@@ -2078,6 +2061,10 @@ label {
       -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1; }
+      .collection-wrap__content > *:last-child {
+        margin-bottom: 0; }
+      .collection-wrap__content > *:first-child {
+        margin-top: 0; }
 
 .collections-cat-wrap {
   margin-bottom: 5rem; }
@@ -2121,25 +2108,41 @@ label {
     width: 100%; }
   .collections-cat-lg {
     background: #eaeaec;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 7rem 4rem;
-    height: 100%; }
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 0;
+    padding: 4rem;
+    display: block; }
+    .collections-cat-lg__wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative; }
+      .collections-cat-lg__wrap:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        right: 0;
+        bottom: -1.5rem;
+        height: 2.5rem;
+        background: -webkit-linear-gradient(bottom, #eaeaec 0%, rgba(234, 234, 236, 0.3) 100%);
+        background: linear-gradient(to top, #eaeaec 0%, rgba(234, 234, 236, 0.3) 100%); }
     .collections-cat-lg__img {
       -webkit-box-flex: 0;
       -webkit-flex: none;
       -ms-flex: none;
       flex: none;
-      margin-right: 3rem;
-      width: 50%;
-      margin-bottom: -2rem;
-      margin-top: -2rem; }
+      margin-right: 2rem;
+      width: 50%; }
       .collections-cat-lg__img img {
         max-width: 100%;
         max-height: 44.5rem;
@@ -2152,7 +2155,10 @@ label {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -ms-flex: 1;
-      flex: 1; }
+      flex: 1;
+      max-height: 100%;
+      overflow: hidden;
+      padding-left: 1rem; }
     .collections-cat-lg__title {
       font-size: 5.5rem;
       line-height: 1.1;
@@ -2161,7 +2167,8 @@ label {
       margin-bottom: 1rem; }
       .collections-cat-lg__title span {
         position: relative;
-        z-index: 1; }
+        z-index: 1;
+        display: inline-block; }
         .collections-cat-lg__title span:after {
           content: '';
           display: block;
@@ -2202,6 +2209,8 @@ label {
     .collections-cat-full__body {
       width: 100%;
       max-width: 48%; }
+    .collections-cat-full__img {
+      display: none; }
     .collections-cat-full__title {
       font-size: 5.5rem;
       line-height: 1.1;
@@ -2549,7 +2558,13 @@ label {
 
 /* 8. MEDIA */
 /* ================================================ */
+@media screen and (min-width: 1601px) {
+  .visible-xl {
+    display: none !important; } }
+
 @media screen and (max-width: 1600px) {
+  .hidden-xl {
+    display: none !important; }
   .card-wrapper {
     position: relative;
     display: -webkit-box;
@@ -2569,7 +2584,8 @@ label {
   /* COLLECTION PAGE */
   .banner {
     margin-bottom: 7rem;
-    padding: 7rem; }
+    padding: 6rem;
+    min-height: 45rem; }
     .banner__title {
       font-size: 7rem; }
   .collection {
@@ -2579,8 +2595,6 @@ label {
       font-size: 5rem; }
     .collection-wrap__img {
       max-width: 45rem; }
-  .collections-cat-wrap {
-    margin-top: 5rem; }
   .collections-cat-lg__wrap {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2595,7 +2609,7 @@ label {
   .collections-cat-lg__text {
     font-size: 1.4rem; }
   .collections-cat-full {
-    padding: 7rem; }
+    padding: 6rem; }
     .collections-cat-full__body {
       max-width: 55%; }
     .collections-cat-full__title {
@@ -2607,7 +2621,7 @@ label {
   .learn-slider__text {
     font-size: 1.5rem; }
   .promo {
-    padding: 7rem;
+    padding: 6rem;
     margin-bottom: 7rem;
     font-size: 1.5rem; }
     .promo__wrap {
@@ -2624,13 +2638,17 @@ label {
   .banner-img-1 {
     background-position: 40% center; }
   .banner-img-2 {
-    background-position: 15% center; }
+    background-position: 25% center; }
   .banner-img-3 {
     background-position: 20% center; }
   .learn-slider {
     max-width: 73rem; }
   .promo__wrap h1, .promo__wrap h2 {
     font-size: 5.3rem; } }
+
+@media screen and (min-width: 1260px) {
+  .visible-lg {
+    display: none !important; } }
 
 @media screen and (max-width: 1259px) {
   .hidden-lg {
@@ -2656,15 +2674,24 @@ label {
   /* COLLECTION PAGE */
   .banner {
     margin-bottom: 7rem;
-    min-height: 40rem;
+    min-height: 35rem;
     padding: 5rem; }
-    .banner__title br {
-      display: none; }
+    .banner__title {
+      font-size: 5.3rem; }
   .collection-wrap {
-    display: block; }
+    display: block;
+    margin-bottom: 0; }
     .collection-wrap__img {
       margin-left: 0;
       max-width: none; }
+  .collections-cat-lg {
+    position: static; }
+    .collections-cat-lg__wrap:after {
+      display: none; }
+  .collections-cat-full {
+    padding: 5rem; }
+    .collections-cat-full__body {
+      max-width: 65%; }
   .learn-slider {
     max-width: 60rem; }
   .promo {
@@ -2804,11 +2831,13 @@ label {
     flex: 1 0 33.33%; }
   /* COLLECTION PAGE */
   .banner {
-    min-height: 37rem;
-    padding: 5rem 3.5rem;
+    min-height: 32rem;
+    padding: 3.5rem;
     margin-bottom: 5rem; }
+    .banner-wrap {
+      max-width: 25rem; }
     .banner__title {
-      font-size: 5.3rem; }
+      font-size: 5rem; }
     .banner__subtitle {
       font-size: 2.3rem; }
   .collection {
@@ -2817,8 +2846,46 @@ label {
       margin-bottom: 2rem; }
   .collection h1, .collection h2, .learn-block__head h1 {
     font-size: 3.8rem; }
+  .collections-cat-wrap {
+    margin-bottom: 2rem; }
   .collections-cat-full__text p {
     margin-bottom: 2rem; }
+  .collections-cat-lg {
+    padding: 3.5rem; }
+    .collections-cat-lg__wrap {
+      display: block;
+      text-align: center; }
+    .collections-cat-lg__body {
+      padding-left: 0;
+      overflow: visible; }
+    .collections-cat-lg__img {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 2rem; }
+      .collections-cat-lg__img img {
+        margin: 0 auto;
+        max-height: 25rem; }
+    .collections-cat-lg__title {
+      font-size: 4rem; }
+      .collections-cat-lg__title br {
+        display: none; }
+  .collections-cat-full {
+    background-image: none !important;
+    display: block;
+    padding: 3.5rem; }
+    .collections-cat-full__body {
+      max-width: none;
+      text-align: center; }
+    .collections-cat-full__img {
+      display: block;
+      padding-bottom: 66%;
+      max-height: 36rem;
+      margin: -3.5rem -3.5rem -2rem;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .collections-cat-full__title {
+      font-size: 4rem; }
   .learn-block {
     padding: 0;
     background-color: transparent; }
@@ -2835,7 +2902,7 @@ label {
     .slick-paging h1 {
       margin: 0; }
   .promo {
-    padding: 4rem 3.5rem;
+    padding: 3.5rem;
     height: 38.7rem;
     background-position: center; }
     .promo__wrap {
@@ -3076,16 +3143,27 @@ label {
     margin-top: 1rem; }
   /* COLLECTION PAGE */
   .banner {
-    padding-top: 7rem; }
+    padding-top: 7rem;
+    padding: 7rem 3rem 3rem; }
     .banner .back-page {
       position: absolute;
-      left: 3.5rem;
+      left: 3rem;
       top: 2rem;
       display: block; }
   .learn-block, .promo, .banner {
     margin-bottom: 5rem; }
   .promo__wrap h1, .promo__wrap h2 {
     font-size: 3.8rem; }
+  .collections-cat {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .collections-cat-lg {
+    padding: 3rem; }
+  .collections-cat-full {
+    padding: 3rem; }
+    .collections-cat-full__img {
+      margin: -3rem -3rem -2rem; }
   .size-block-wrap {
     margin-bottom: -2rem; }
     .size-block-wrap__item {
@@ -3124,17 +3202,16 @@ label {
     margin-right: auto; }
   /* COLLECTION PAGE */
   .banner {
-    min-height: 50rem;
+    min-height: 45rem;
     text-align: center;
     margin-left: -4%;
     margin-right: -4%;
-    padding: 5.5rem 4% 4rem; }
+    padding: 5.5rem 4% 3rem; }
     .banner-wrap {
       max-width: none; }
     .banner .back-page {
       left: 4%; }
   .banner-img-1 {
-    background-image: url("../img/banner-1-mobile.jpg");
     background-position: center; }
   .banner-img-2 {
     background-position: 35% center !important; }
@@ -3144,11 +3221,16 @@ label {
     margin-left: -4%;
     margin-right: -4%; }
     .collection-wrap__img img {
-      width: 100%; } }
+      width: 100%; }
+  .collections-cat-lg, .collections-cat-full {
+    margin-left: -4%;
+    margin-right: -4%;
+    padding: 3rem 4%; }
+  .collections-cat-full__img {
+    margin-left: -4%;
+    margin-right: -4%; } }
 
 @media screen and (max-width: 350px) {
   .card-info .card-info-list {
     -webkit-columns: 1;
-    columns: 1; }
-  .banner {
-    min-height: 45rem; } }
+    columns: 1; } }

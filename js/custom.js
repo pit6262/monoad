@@ -418,6 +418,8 @@ $(window).on('scroll load', function(){
 	};
 });
 
+
+
 $(window).on('load scroll', function() { 
     if ($(window).scrollTop() >= $('.main').offset().top + $('.main').outerHeight() - window.innerHeight) { 
         $('#main-footer').removeClass('open');
