@@ -286,6 +286,12 @@ img {
   display: block;
   max-width: 100%; }
 
+.anchor {
+  font-weight: 700; }
+  .anchor:hover {
+    text-decoration: none;
+    color: #fbc644; }
+
 /* loader */
 .loaded .main-wrapper {
   visibility: hidden;
