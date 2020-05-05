@@ -1989,7 +1989,7 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50rem;
-  padding: 9rem 9.6rem;
+  padding: 9rem 9.6rem 5rem;
   margin-bottom: 7.5rem;
   position: relative; }
   .banner .back-page {
@@ -2007,6 +2007,7 @@ label {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 3rem;
+    color: #131313;
     line-height: 1.1;
     font-family: 'Bebas Neue', sans-serif; }
     .banner__subtitle .selection {
@@ -2014,6 +2015,41 @@ label {
       vertical-align: middle;
       background: #fbc644;
       padding: .6rem 1.4rem .3rem; }
+  .banner__gallery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-top: 4rem; }
+    .banner__gallery .img {
+      width: 8.2rem;
+      height: 6.2rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 2rem 1rem 0 1rem; }
+  .banner--white {
+    color: #fff; }
+  .banner--gallery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .banner-img-1 {
   background-image: url("../img/banner-1.jpg"); }
@@ -2077,9 +2113,21 @@ label {
   .collections-cat__img {
     text-align: center;
     padding-top: 60.245%;
+    position: relative;
+    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+    .collections-cat__img .img2, .collections-cat__img .img1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: opacity 0.4s ease-in-out;
+      transition: opacity 0.4s ease-in-out; }
+    .collections-cat__img .img2 {
+      opacity: 0; }
   .collections-cat__title {
     padding: .8rem 1.8rem;
     font-size: 2.2rem;
@@ -2106,6 +2154,10 @@ label {
       transition: width 0.5s ease-in-out; }
   .collections-cat:hover .collections-cat__title:after {
     width: 100%; }
+  .collections-cat:hover .collections-cat__img .img1 {
+    opacity: 0; }
+  .collections-cat:hover .collections-cat__img .img2 {
+    opacity: 1; }
   .collections-cat-lg {
     background: #eaeaec;
     position: absolute;
@@ -2242,6 +2294,67 @@ label {
       .collections-cat-full__text p {
         margin-bottom: 2.5rem; }
     .collections-cat-full:hover .collections-cat-full__title span:after {
+      width: 87%; }
+  .collections-cat-long {
+    background: #eaeaec;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 9.6rem; }
+    .collections-cat-long__body {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .collections-cat-long__img {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      padding-left: 4rem; }
+    .collections-cat-long__title {
+      font-size: 5.5rem;
+      line-height: 1.1;
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      margin-bottom: 1rem; }
+      .collections-cat-long__title span {
+        position: relative;
+        z-index: 1; }
+        .collections-cat-long__title span:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: -1rem;
+          top: -.3rem;
+          height: 100%;
+          z-index: -1;
+          background: #fbc644;
+          width: 0;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out; }
+    .collections-cat-long__text {
+      font-size: 1.5rem;
+      line-height: 1.9; }
+      .collections-cat-long__text > *:last-child {
+        margin-bottom: 0; }
+      .collections-cat-long__text > *:first-child {
+        margin-top: 0; }
+      .collections-cat-long__text p {
+        margin-bottom: 2.5rem; }
+    .collections-cat-long:hover .collections-cat-long__title span:after {
       width: 87%; }
 
 /* SOLE PAGE ========= */
@@ -2616,6 +2729,14 @@ label {
       font-size: 5rem; }
     .collections-cat-full__text {
       font-size: 1.4rem; }
+  .collections-cat-long {
+    padding: 6rem; }
+    .collections-cat-long__title {
+      font-size: 5rem; }
+    .collections-cat-long__text {
+      font-size: 1.4rem; }
+    .collections-cat-long__img {
+      max-width: 30rem; }
   .learn-block {
     margin-bottom: 7rem; }
   .learn-slider__text {
@@ -2692,6 +2813,13 @@ label {
     padding: 5rem; }
     .collections-cat-full__body {
       max-width: 65%; }
+  .collections-cat-long {
+    display: block;
+    padding: 4rem; }
+    .collections-cat-long__img {
+      float: right;
+      padding: 0;
+      margin: 0 0 3rem 3rem; }
   .learn-slider {
     max-width: 60rem; }
   .promo {
@@ -2885,6 +3013,14 @@ label {
       background-position: center;
       background-repeat: no-repeat; }
     .collections-cat-full__title {
+      font-size: 4rem; }
+  .collections-cat-long {
+    padding: 3.5rem;
+    text-align: center; }
+    .collections-cat-long__img {
+      float: none;
+      margin: 0 auto 3rem auto; }
+    .collections-cat-long__title {
       font-size: 4rem; }
   .learn-block {
     padding: 0;
@@ -3158,7 +3294,7 @@ label {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto; }
-  .collections-cat-lg {
+  .collections-cat-lg, .collections-cat-long {
     padding: 3rem; }
   .collections-cat-full {
     padding: 3rem; }
@@ -3206,11 +3342,16 @@ label {
     text-align: center;
     margin-left: -4%;
     margin-right: -4%;
-    padding: 5.5rem 4% 3rem; }
+    padding: 5.5rem 4% 4rem; }
     .banner-wrap {
       max-width: none; }
     .banner .back-page {
       left: 4%; }
+    .banner__gallery {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
   .banner-img-1 {
     background-position: center; }
   .banner-img-2 {
@@ -3222,7 +3363,7 @@ label {
     margin-right: -4%; }
     .collection-wrap__img img {
       width: 100%; }
-  .collections-cat-lg, .collections-cat-full {
+  .collections-cat-lg, .collections-cat-full, .collections-cat-long {
     margin-left: -4%;
     margin-right: -4%;
     padding: 3rem 4%; }
