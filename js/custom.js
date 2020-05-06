@@ -220,6 +220,16 @@ $(function(){
     	return false;
     });
 
+    $('.dropdown > a').on('click', function(){
+    	var thisDropMenu = $(this).next('.dropdown-menu')
+    	var thisDropParent = $(this).parents('.dropdown-menu')
+    	$('.dropdown-menu').not(thisDropMenu).not(thisDropParent).hide(200)
+    	$(this).next('.dropdown-menu').slideToggle(200);
+    	return false;
+    });
+
+    
+
 
 	$('a.anchor').bind('click.smoothscroll',function () {
 		var target = $(this).attr('href'),
