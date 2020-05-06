@@ -331,7 +331,7 @@ $(function(){
     function openMenuMobile() {
     	$('.btn-toggle-menu').on('click', function(){
 	    	$('.navbar').addClass('open');
-
+	    	$('.category').removeClass('open');
 	    	return false;
 	    });
 
@@ -346,7 +346,7 @@ $(function(){
     function openCategoryMobile() {
     	$('.btn-toggle-category').on('click', function(){
 	    	$('.category').addClass('open');
-
+	    	$('.navbar').removeClass('open');
 	    	return false;
 	    });
 

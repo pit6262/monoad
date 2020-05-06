@@ -1263,9 +1263,17 @@ label {
     font-size: 0;
     position: absolute;
     top: 2.5rem;
-    left: 3rem;
+    right: 3rem;
     z-index: 1; }
     .category__close .icon {
+      font-size: 1.8rem; }
+  .category__back {
+    font-size: 0;
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    z-index: 1; }
+    .category__back .icon {
       font-size: 1.8rem; }
   .category__overlay {
     position: fixed;
